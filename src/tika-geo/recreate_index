@@ -1,0 +1,4 @@
+#!/bin/bash
+
+curl -XDELETE "http://localhost:9200/dig-autonomy-18-geo/"
+curl -XPUT "http://localhost:9200/dig-autonomy-18-geo/" -d@mappings-geo.json

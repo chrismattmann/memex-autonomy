@@ -65,14 +65,24 @@ def addTikaGeo(tJson, nJson):
 es = Elasticsearch()
 query = {"query": {"match": {'_type':'article'}}}
 res = helpers.scan(client= es, query=query, scroll= "10m", index="dig-autonomy-18", doc_type="article", timeout="10m")
-#res = es.search(index='dig-autonomy-18', body=query)
 docs = []
-#for hit in res['hits']['hits']:
+count = 0
+tikaGeoCount = 0
+
 for hit in res:
     tikaJson = tikaGeoExtract(hit)
     newDoc = hit['_source']
     addTikaGeo(tikaJson, newDoc)
-    docs.append(newDoc)
+    hasTikaGeo = "no"
+    if "tika_location" in newDoc:
+        hasTikaGeo = "yes"
+        tikaGeoCount = tikaGeoCount + 1
 
-with open("out.json", "rw") as out:
-    out.write(json.dumps(docs))
+        es.index(index='dig-autonomy-18-geo', doc_type='article', body=newDoc)
+    count = count + 1
+    print "Indexing "+newDoc["uri"]+" Tika Geo: ["+hasTikaGeo+"]: Total Docs Indexed: ["+str(count)+"]"
+
+
+es.indices.refresh(index='dig-autonomy-18-geo')
+print "Total Docs Indexed: ["+str(count)+"]"
+print "Total Docs with Tika Geo: ["+str(tikaGeoCount)+"]"
