@@ -1,0 +1,302 @@
+{
+    "mappings": {
+        "article": {
+            "properties": {
+                "@context": {
+                    "index": "no",
+                    "type": "string"
+                },
+                "a": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "author": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "alternateName": {
+                            "type": "string"
+                        },
+                        "email": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "isAuthorOf": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "name": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "citation": {
+                    "properties": {
+                        "a": {
+                            "index": "no",
+                            "type": "string"
+                        },
+                        "author": {
+                            "properties": {
+                                "a": {
+                                    "index": "no",
+                                    "type": "string"
+                                },
+                                "alternateName": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "index": "no",
+                                    "type": "string"
+                                },
+                                "uri": {
+                                    "index": "no",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "datePublished": {
+                            "format": "YYYY",
+                            "index": "no",
+                            "type": "date"
+                        },
+                        "isCitationOf": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "index": "no",
+                            "type": "string"
+                        },
+                        "uri": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "datePublished": {
+                    "type": "string"
+                },
+                "isCitationOf": {
+                    "properties": {
+                        "a": {
+                            "type": "string"
+                        },
+                        "citation": {
+                            "type": "string"
+                        },
+                        "uri": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "keywords": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "sourceOrganization": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "location": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "name": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "text": {
+                    "analyzer": "english",
+                    "type": "string"
+                },
+                "tika_location": {
+                    "include_in_root": true,
+                    "properties": {
+                        "alternate_locations": {
+                            "include_in_root": true,
+                            "properties": {
+                                "alt_geo_lat": {
+                                    "doc_values": true,
+                                    "type": "double"
+                                },
+                                "alt_geo_lng": {
+                                    "doc_values": true,
+                                    "type": "double"
+                                },
+                                "alt_geo_name": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "geo_lat": {
+                            "doc_values": true,
+                            "type": "double"
+                        },
+                        "geo_lng": {
+                            "doc_values": true,
+                            "type": "double"
+                        },
+                        "geo_name": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "uri": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                }
+            }
+        },
+        "authors": {
+            "properties": {
+                "@context": {
+                    "index": "no",
+                    "type": "string"
+                },
+                "a": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "alternateName": {
+                    "type": "string"
+                },
+                "email": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "isAuthorOf": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "author": {
+                            "type": "string"
+                        },
+                        "citation": {
+                            "properties": {
+                                "a": {
+                                    "index": "no",
+                                    "type": "string"
+                                },
+                                "author": {
+                                    "properties": {
+                                        "a": {
+                                            "index": "no",
+                                            "type": "string"
+                                        },
+                                        "alternateName": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "index": "no",
+                                            "type": "string"
+                                        },
+                                        "uri": {
+                                            "index": "no",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "datePublished": {
+                                    "format": "YYYY",
+                                    "index": "no",
+                                    "type": "date"
+                                },
+                                "title": {
+                                    "index": "no",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "datePublished": {
+                            "type": "string"
+                        },
+                        "keywords": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "sourceOrganization": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "location": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "text": {
+                            "analyzer": "english",
+                            "type": "string"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "name": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "uri": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,2806 @@
+[
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": "Hollerbach, J.M.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/350919",
+                    "http://dig.isi.edu/autonomy/data/article/100199",
+                    "http://dig.isi.edu/autonomy/data/article/100047",
+                    "http://dig.isi.edu/autonomy/data/article/4543308",
+                    "http://dig.isi.edu/autonomy/data/article/292238",
+                    "http://dig.isi.edu/autonomy/data/article/4790240"
+                ],
+                "name": "J. M. Hollerbach",
+                "uri": "http://dig.isi.edu/autonomy/data/author/j.m.hollerbach"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Lafontaine, S.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/804027",
+                    "http://dig.isi.edu/autonomy/data/article/100199"
+                ],
+                "name": "S. Lafontaine",
+                "uri": "http://dig.isi.edu/autonomy/data/author/s.lafontaine"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Hunter, P.J.",
+                "isAuthorOf": "http://dig.isi.edu/autonomy/data/article/100199",
+                "name": "P. J. Hunter",
+                "uri": "http://dig.isi.edu/autonomy/data/author/p.j.hunter"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Hunter, I.W.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/5627677",
+                    "http://dig.isi.edu/autonomy/data/article/100199",
+                    "http://dig.isi.edu/autonomy/data/article/6091659",
+                    "http://dig.isi.edu/autonomy/data/article/4443174",
+                    "http://dig.isi.edu/autonomy/data/article/1353426",
+                    "http://dig.isi.edu/autonomy/data/article/6092057",
+                    "http://dig.isi.edu/autonomy/data/article/4462359",
+                    "http://dig.isi.edu/autonomy/data/article/6907652"
+                ],
+                "name": "I. W. Hunter",
+                "uri": "http://dig.isi.edu/autonomy/data/author/i.w.hunter"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Nielsen, P.M.F.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/5627357",
+                    "http://dig.isi.edu/autonomy/data/article/100199"
+                ],
+                "name": "P. M. F. Nielsen",
+                "uri": "http://dig.isi.edu/autonomy/data/author/p.m.f.nielsen"
+            }
+        ],
+        "datePublished": "1989",
+        "isCitationOf": [
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/96044",
+                    "http://dig.isi.edu/autonomy/data/article/1177080",
+                    "http://dig.isi.edu/autonomy/data/article/100199",
+                    "http://dig.isi.edu/autonomy/data/article/1241740"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1438888"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/620120"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/677430"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/655140"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/240566",
+                    "http://dig.isi.edu/autonomy/data/article/100199"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/677432"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/131826"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/277270"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/744610"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/774037"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/525515"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/727288"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/339323"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/571085"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/194293",
+                    "http://dig.isi.edu/autonomy/data/article/100199"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/110261"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/100199",
+                "uri": "http://dig.isi.edu/autonomy/data/article/571063"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/525882",
+                    "http://dig.isi.edu/autonomy/data/article/100199"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/745766"
+            }
+        ],
+        "keywords": [
+            "robots",
+            "polarization",
+            "Concurrent computing",
+            "10 nm",
+            "Testing",
+            "End effectors",
+            "surgery",
+            "3D laser vision system",
+            "remote control",
+            "Surgery",
+            "dynamic testing",
+            "microscopic objects",
+            "tele-micro-robot system",
+            "single living cells",
+            "overlapping spherical workspaces",
+            "high-performance parallel drive limbs",
+            "biomedical equipment",
+            "Optimal control",
+            "telecontrol",
+            "dynamic mechanical testing",
+            "Grippers",
+            "Ferroelectric materials",
+            "laser applications in medicine",
+            "computer vision",
+            "optimal control",
+            "2 m/s",
+            "magnitude",
+            "high-performance parallel computer",
+            "manipulation",
+            "1 nm",
+            "volume images",
+            "ferroelectric polymer microgrippers",
+            "force-reflecting teleoperation",
+            "automatic test equipment",
+            "Microscopy",
+            "parallel processing",
+            "continuum models",
+            "nonlinear control systems",
+            "end effectors",
+            "Polymers",
+            "phase",
+            "microrobot",
+            "nonlinear control",
+            "Manipulator dynamics",
+            "1 mm"
+        ],
+        "name": "Manipulation and dynamic mechanical testing of microscopic objects using a tele-micro-robot system",
+        "text": "A microrobot having two high-performance parallel drive limbs has been developed for manipulation, surgery, and dynamic mechanical testing of very small objects such as single living cells. The end-points of each limb move in overlapping spherical workspaces of 1 mm diameter with minimum open- and closed-loop movements of 1 nm and 10 nm, respectively. With optimal nonlinear model-based controllers the limbs can move at up to 2 m/s relative to each other. A variety of end effectors, including ferroelectric polymer microgrippers, may be attached to the limbs to permit cell manipulation. A 3D laser vision system with resolution of 50 to 100 nm has been developed to provide the microrobot with volume images containing magnitude, phase, polarization, and special information. A macro version of the microrobot has been built to enable force-reflecting teleoperation of the microrobot. The telemicrorobot system permits both microscopic objects and continuum models to be felt. A high-performance parallel computer has been designed to meet the substantial computational and control requirements of the system\nAuthor(s) Hunter, I.W. Biomed. Eng., McGill Univ., Montreal, Que., Canada Lafontaine, S. ; Nielsen, P.M.F. ; Hunter, P.J. ; Hollerbach, J.M.\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "uri": "http://dig.isi.edu/autonomy/data/article/100199"
+    },
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": "Costescu, N.P.",
+                "isAuthorOf": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "name": "N. P. Costescu",
+                "uri": "http://dig.isi.edu/autonomy/data/author/n.p.costescu"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Loffler, M.S.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/973891"
+                ],
+                "name": "M. S. Loffler",
+                "uri": "http://dig.isi.edu/autonomy/data/author/m.s.loffler"
+            },
+            {
+                "a": "Person",
+                "alternateName": [
+                    "Dawson, D.M",
+                    "Dawson, D.M."
+                ],
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/4790579",
+                    "http://dig.isi.edu/autonomy/data/article/468433",
+                    "http://dig.isi.edu/autonomy/data/article/219939",
+                    "http://dig.isi.edu/autonomy/data/article/577391",
+                    "http://dig.isi.edu/autonomy/data/article/522802",
+                    "http://dig.isi.edu/autonomy/data/article/4792290",
+                    "http://dig.isi.edu/autonomy/data/article/897463",
+                    "http://dig.isi.edu/autonomy/data/article/532746",
+                    "http://dig.isi.edu/autonomy/data/article/4739142",
+                    "http://dig.isi.edu/autonomy/data/article/520979",
+                    "http://dig.isi.edu/autonomy/data/article/131821",
+                    "http://dig.isi.edu/autonomy/data/article/712213",
+                    "http://dig.isi.edu/autonomy/data/article/348353",
+                    "http://dig.isi.edu/autonomy/data/article/1184283",
+                    "http://dig.isi.edu/autonomy/data/article/1583003",
+                    "http://dig.isi.edu/autonomy/data/article/325171",
+                    "http://dig.isi.edu/autonomy/data/article/803268",
+                    "http://dig.isi.edu/autonomy/data/article/480610",
+                    "http://dig.isi.edu/autonomy/data/article/261482",
+                    "http://dig.isi.edu/autonomy/data/article/4209277",
+                    "http://dig.isi.edu/autonomy/data/article/381267",
+                    "http://dig.isi.edu/autonomy/data/article/623233",
+                    "http://dig.isi.edu/autonomy/data/article/976397",
+                    "http://dig.isi.edu/autonomy/data/article/931519",
+                    "http://dig.isi.edu/autonomy/data/article/936891",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/499824",
+                    "http://dig.isi.edu/autonomy/data/article/826953",
+                    "http://dig.isi.edu/autonomy/data/article/677023",
+                    "http://dig.isi.edu/autonomy/data/article/4791233",
+                    "http://dig.isi.edu/autonomy/data/article/1582365",
+                    "http://dig.isi.edu/autonomy/data/article/4586600",
+                    "http://dig.isi.edu/autonomy/data/article/973891",
+                    "http://dig.isi.edu/autonomy/data/article/951370",
+                    "http://dig.isi.edu/autonomy/data/article/4359261",
+                    "http://dig.isi.edu/autonomy/data/article/4177437",
+                    "http://dig.isi.edu/autonomy/data/article/4739225",
+                    "http://dig.isi.edu/autonomy/data/article/1429662",
+                    "http://dig.isi.edu/autonomy/data/article/478563",
+                    "http://dig.isi.edu/autonomy/data/article/478564",
+                    "http://dig.isi.edu/autonomy/data/article/261631",
+                    "http://dig.isi.edu/autonomy/data/article/525047",
+                    "http://dig.isi.edu/autonomy/data/article/411145",
+                    "http://dig.isi.edu/autonomy/data/article/532060",
+                    "http://dig.isi.edu/autonomy/data/article/657583",
+                    "http://dig.isi.edu/autonomy/data/article/1618536",
+                    "http://dig.isi.edu/autonomy/data/article/1268059",
+                    "http://dig.isi.edu/autonomy/data/article/803179",
+                    "http://dig.isi.edu/autonomy/data/article/297786",
+                    "http://dig.isi.edu/autonomy/data/article/1248907",
+                    "http://dig.isi.edu/autonomy/data/article/381449"
+                ],
+                "name": "D. M. Dawson",
+                "uri": "http://dig.isi.edu/autonomy/data/author/d.m.dawson"
+            }
+        ],
+        "citation": [
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/479350",
+                    "http://dig.isi.edu/autonomy/data/article/1044355"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/179114"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/5611207",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/1595105",
+                    "http://dig.isi.edu/autonomy/data/article/4586492"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/914747"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/390774",
+                    "http://dig.isi.edu/autonomy/data/article/254551",
+                    "http://dig.isi.edu/autonomy/data/article/367839",
+                    "http://dig.isi.edu/autonomy/data/article/4632821",
+                    "http://dig.isi.edu/autonomy/data/article/131767",
+                    "http://dig.isi.edu/autonomy/data/article/1087068",
+                    "http://dig.isi.edu/autonomy/data/article/103479",
+                    "http://dig.isi.edu/autonomy/data/article/126126",
+                    "http://dig.isi.edu/autonomy/data/article/406495",
+                    "http://dig.isi.edu/autonomy/data/article/131945",
+                    "http://dig.isi.edu/autonomy/data/article/583082",
+                    "http://dig.isi.edu/autonomy/data/article/4058446",
+                    "http://dig.isi.edu/autonomy/data/article/348238",
+                    "http://dig.isi.edu/autonomy/data/article/351360",
+                    "http://dig.isi.edu/autonomy/data/article/203963",
+                    "http://dig.isi.edu/autonomy/data/article/538491",
+                    "http://dig.isi.edu/autonomy/data/article/574341",
+                    "http://dig.isi.edu/autonomy/data/article/680950",
+                    "http://dig.isi.edu/autonomy/data/article/351314",
+                    "http://dig.isi.edu/autonomy/data/article/790448",
+                    "http://dig.isi.edu/autonomy/data/article/142226",
+                    "http://dig.isi.edu/autonomy/data/article/291986",
+                    "http://dig.isi.edu/autonomy/data/article/240550",
+                    "http://dig.isi.edu/autonomy/data/article/561481",
+                    "http://dig.isi.edu/autonomy/data/article/12309",
+                    "http://dig.isi.edu/autonomy/data/article/976397",
+                    "http://dig.isi.edu/autonomy/data/article/1512171",
+                    "http://dig.isi.edu/autonomy/data/article/1391020",
+                    "http://dig.isi.edu/autonomy/data/article/648901",
+                    "http://dig.isi.edu/autonomy/data/article/5091054",
+                    "http://dig.isi.edu/autonomy/data/article/4271093",
+                    "http://dig.isi.edu/autonomy/data/article/626439",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/865439",
+                    "http://dig.isi.edu/autonomy/data/article/5189660",
+                    "http://dig.isi.edu/autonomy/data/article/250542",
+                    "http://dig.isi.edu/autonomy/data/article/70206",
+                    "http://dig.isi.edu/autonomy/data/article/900181",
+                    "http://dig.isi.edu/autonomy/data/article/125949",
+                    "http://dig.isi.edu/autonomy/data/article/760619"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1087644"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "uri": "http://dig.isi.edu/autonomy/data/article/832799"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/1389984",
+                    "http://dig.isi.edu/autonomy/data/article/4663717",
+                    "http://dig.isi.edu/autonomy/data/article/6168853",
+                    "http://dig.isi.edu/autonomy/data/article/5437249",
+                    "http://dig.isi.edu/autonomy/data/article/1387699"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/924797"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/1507324",
+                    "http://dig.isi.edu/autonomy/data/article/951369",
+                    "http://dig.isi.edu/autonomy/data/article/826953",
+                    "http://dig.isi.edu/autonomy/data/article/900181"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/768542"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "uri": "http://dig.isi.edu/autonomy/data/article/879570"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/5979924",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/1184283",
+                    "http://dig.isi.edu/autonomy/data/article/4593550",
+                    "http://dig.isi.edu/autonomy/data/article/7068522"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/879448"
+            }
+        ],
+        "datePublished": "2002",
+        "isCitationOf": [
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/88100",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/1268059",
+                    "http://dig.isi.edu/autonomy/data/article/1248907",
+                    "http://dig.isi.edu/autonomy/data/article/931519",
+                    "http://dig.isi.edu/autonomy/data/article/3899",
+                    "http://dig.isi.edu/autonomy/data/article/1087089"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1618536"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "uri": "http://dig.isi.edu/autonomy/data/article/5138517"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/751370"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/4349203"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "uri": "http://dig.isi.edu/autonomy/data/article/4400880"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/721587"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1545465"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/121619",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/826953"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1268059"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/88100",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/1268059",
+                    "http://dig.isi.edu/autonomy/data/article/1184283",
+                    "http://dig.isi.edu/autonomy/data/article/677266",
+                    "http://dig.isi.edu/autonomy/data/article/1248907",
+                    "http://dig.isi.edu/autonomy/data/article/3899",
+                    "http://dig.isi.edu/autonomy/data/article/1087089"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1510777"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "uri": "http://dig.isi.edu/autonomy/data/article/4413886"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1087919",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/623233",
+                    "http://dig.isi.edu/autonomy/data/article/803179",
+                    "http://dig.isi.edu/autonomy/data/article/100019",
+                    "http://dig.isi.edu/autonomy/data/article/539436",
+                    "http://dig.isi.edu/autonomy/data/article/56662",
+                    "http://dig.isi.edu/autonomy/data/article/914393"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/4555743"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/406930",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/291826"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1512361"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/5627677",
+                    "http://dig.isi.edu/autonomy/data/article/6386022",
+                    "http://dig.isi.edu/autonomy/data/article/6496902",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/1641976",
+                    "http://dig.isi.edu/autonomy/data/article/1642343",
+                    "http://dig.isi.edu/autonomy/data/article/6091329",
+                    "http://dig.isi.edu/autonomy/data/article/774029",
+                    "http://dig.isi.edu/autonomy/data/article/5371822",
+                    "http://dig.isi.edu/autonomy/data/article/976252",
+                    "http://dig.isi.edu/autonomy/data/article/6094941",
+                    "http://dig.isi.edu/autonomy/data/article/1307486"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/6836183"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/121619",
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/751812",
+                    "http://dig.isi.edu/autonomy/data/article/991420",
+                    "http://dig.isi.edu/autonomy/data/article/1570305",
+                    "http://dig.isi.edu/autonomy/data/article/480610"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/4282255"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/4209277",
+                    "http://dig.isi.edu/autonomy/data/article/1570575",
+                    "http://dig.isi.edu/autonomy/data/article/1302467",
+                    "http://dig.isi.edu/autonomy/data/article/774029"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/4359261"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "uri": "http://dig.isi.edu/autonomy/data/article/4519207"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1003996",
+                    "http://dig.isi.edu/autonomy/data/article/951369"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1187319"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "uri": "http://dig.isi.edu/autonomy/data/article/4443869"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "uri": "http://dig.isi.edu/autonomy/data/article/4586776"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1003996",
+                "uri": "http://dig.isi.edu/autonomy/data/article/4026499"
+            }
+        ],
+        "keywords": [
+            "Robot control",
+            "robots",
+            "data exporting capabilities",
+            "data logging",
+            "real-time control algorithms",
+            "operating system",
+            "Testing",
+            "microcomputer applications",
+            "client-server systems",
+            "PC-based control platform",
+            "QMotor Robotic Toolkit",
+            "C++ language",
+            "Control systems",
+            "graphical user interfaces",
+            "QNX-based object-oriented single-processor software environment",
+            "computerised control",
+            "client/server architecture",
+            "Digital signal processing",
+            "Software standards",
+            "object-oriented programming",
+            "Operating systems",
+            "OS",
+            "Graphical user interfaces",
+            "real-time systems",
+            "graphical user interface",
+            "GUI",
+            "QMotor 3.0",
+            "plotting",
+            "Hardware",
+            "C++ programs",
+            "Intel-processor-based PCs",
+            "deterministic response",
+            "Software algorithms",
+            "Personal communication networks",
+            "programming environments"
+        ],
+        "name": "QMotor 3.0 and the QMotor robotic toolkit: a PC-based control platform",
+        "text": "Q Motor 3.0 is a QNX-based object-oriented single-processor software environment that allows the implementation of real-time control algorithms as C++ programs on standard Intel-processor-based PCs. The QMotor 3.0 graphical user interface (GUI) integrates functionality for testing and tuning of these control programs. In addition, it provides advanced data logging, plotting, and data exporting capabilities. The control program, as well as the development tools and the GUI, can all execute simultaneously on the PC due to the deterministic response of the operating system (OS). This architecture replaces the traditional multiprocessor host/DSP board architecture often used in control applications. Advantages of a single-processor system include reduced cost and lower complexity, as well as increased flexibility and upgradability. A client/server architecture decouples the control program from the hardware so that QMotor 3.0 can easily be extended to work with new hardware. QMotor 3.0 has been used successfully in many of the control experiments performed by the Clemson Control and Robotics group, including motor and robot control, active magnetic bearing experiments, and vibration control for flexible structures\nAuthor(s) Loffler, M.S. Dept. of Electr. & Comput. Eng., Clemson Univ., SC, USA Costescu, N.P. ; Dawson, D.M.\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "uri": "http://dig.isi.edu/autonomy/data/article/1003996"
+    },
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": "Oosako, Y.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/981114",
+                    "http://dig.isi.edu/autonomy/data/article/1013572"
+                ],
+                "name": "Y. Oosako",
+                "uri": "http://dig.isi.edu/autonomy/data/author/y.oosako"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Matsuno, F.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/6224829",
+                    "http://dig.isi.edu/autonomy/data/article/4209692",
+                    "http://dig.isi.edu/autonomy/data/article/1241897",
+                    "http://dig.isi.edu/autonomy/data/article/6760756",
+                    "http://dig.isi.edu/autonomy/data/article/6523894",
+                    "http://dig.isi.edu/autonomy/data/article/6106795",
+                    "http://dig.isi.edu/autonomy/data/article/6858926",
+                    "http://dig.isi.edu/autonomy/data/article/6106779",
+                    "http://dig.isi.edu/autonomy/data/article/854097",
+                    "http://dig.isi.edu/autonomy/data/article/1501269",
+                    "http://dig.isi.edu/autonomy/data/article/5650705",
+                    "http://dig.isi.edu/autonomy/data/article/4654801",
+                    "http://dig.isi.edu/autonomy/data/article/4655068",
+                    "http://dig.isi.edu/autonomy/data/article/6714850",
+                    "http://dig.isi.edu/autonomy/data/article/4655044",
+                    "http://dig.isi.edu/autonomy/data/article/1560416",
+                    "http://dig.isi.edu/autonomy/data/article/1389541",
+                    "http://dig.isi.edu/autonomy/data/article/4654746",
+                    "http://dig.isi.edu/autonomy/data/article/4776979",
+                    "http://dig.isi.edu/autonomy/data/article/1501272",
+                    "http://dig.isi.edu/autonomy/data/article/4600712",
+                    "http://dig.isi.edu/autonomy/data/article/4543360",
+                    "http://dig.isi.edu/autonomy/data/article/4108474",
+                    "http://dig.isi.edu/autonomy/data/article/4655193",
+                    "http://dig.isi.edu/autonomy/data/article/1013572",
+                    "http://dig.isi.edu/autonomy/data/article/6144056",
+                    "http://dig.isi.edu/autonomy/data/article/4654928",
+                    "http://dig.isi.edu/autonomy/data/article/1195272",
+                    "http://dig.isi.edu/autonomy/data/article/5354079",
+                    "http://dig.isi.edu/autonomy/data/article/4655170",
+                    "http://dig.isi.edu/autonomy/data/article/4141904",
+                    "http://dig.isi.edu/autonomy/data/article/4654925",
+                    "http://dig.isi.edu/autonomy/data/article/5509673",
+                    "http://dig.isi.edu/autonomy/data/article/4913282",
+                    "http://dig.isi.edu/autonomy/data/article/981114",
+                    "http://dig.isi.edu/autonomy/data/article/7039509",
+                    "http://dig.isi.edu/autonomy/data/article/4389228",
+                    "http://dig.isi.edu/autonomy/data/article/6147534",
+                    "http://dig.isi.edu/autonomy/data/article/6942863",
+                    "http://dig.isi.edu/autonomy/data/article/1285598",
+                    "http://dig.isi.edu/autonomy/data/article/6385798",
+                    "http://dig.isi.edu/autonomy/data/article/4913281",
+                    "http://dig.isi.edu/autonomy/data/article/845369",
+                    "http://dig.isi.edu/autonomy/data/article/1570575",
+                    "http://dig.isi.edu/autonomy/data/article/1560449",
+                    "http://dig.isi.edu/autonomy/data/article/1521744"
+                ],
+                "name": "F. Matsuno",
+                "uri": "http://dig.isi.edu/autonomy/data/author/f.matsuno"
+            }
+        ],
+        "citation": [
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1013572",
+                    "http://dig.isi.edu/autonomy/data/article/6630914",
+                    "http://dig.isi.edu/autonomy/data/article/1242555"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/912178"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1013572",
+                    "http://dig.isi.edu/autonomy/data/article/6871123",
+                    "http://dig.isi.edu/autonomy/data/article/914393"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/664151"
+            }
+        ],
+        "datePublished": "2002",
+        "keywords": [
+            "Space shuttles",
+            "constraint force",
+            "asteroids",
+            "mobile robots",
+            "equipment",
+            "robot-asteroid contact",
+            "robot-asteroid impact",
+            "attitude control",
+            "asteroid sample return robot control",
+            "Attitude control",
+            "Control systems",
+            "spacecraft",
+            "force control law",
+            "robot acceleration",
+            "space vehicles",
+            "Space technology",
+            "attitude control law",
+            "force control",
+            "asteroid",
+            "instrument",
+            "Acceleration",
+            "astronomical instruments",
+            "Differential equations",
+            "Mobile robots",
+            "Force control",
+            "complementarity modeling",
+            "aerospace robotics",
+            "Orbital robotics",
+            "Manipulators"
+        ],
+        "name": "Experimental study on control of an asteroid sample return robot during contact based on complementa...",
+        "text": "In this paper, we propose a force and attitude control law of an asteroid sample return robot to obtain an enough constraint force for taking samples from the surface of the asteroid during contact. In a phenomenon of the impact between the robot and the asteroid, there is a complementary relation between the robot acceleration and the constraint force on the contact point. To pay attention to the complementarity, we derive a condition to constrain the robot on the surface of the asteroid based on complementarity system (CS). We design a control law which achieves the desired force and attitude with keeping the contact, and verify the effectiveness of the proposed control law by experiments.\nAuthor(s) Matsuno, F. Tokyo Inst. of Technol., Japan Oosako, Y.\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "tika_location": {
+            "geo_lat": "4.84625",
+            "geo_lng": "118.06746",
+            "geo_name": "Tokyo"
+        },
+        "uri": "http://dig.isi.edu/autonomy/data/article/1013572"
+    },
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": "Kumar, V.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/5980364",
+                    "http://dig.isi.edu/autonomy/data/article/6804431",
+                    "http://dig.isi.edu/autonomy/data/article/6290710",
+                    "http://dig.isi.edu/autonomy/data/article/6630910",
+                    "http://dig.isi.edu/autonomy/data/article/6299147",
+                    "http://dig.isi.edu/autonomy/data/article/932781",
+                    "http://dig.isi.edu/autonomy/data/article/131574",
+                    "http://dig.isi.edu/autonomy/data/article/5980421",
+                    "http://dig.isi.edu/autonomy/data/article/5234096",
+                    "http://dig.isi.edu/autonomy/data/article/1308928",
+                    "http://dig.isi.edu/autonomy/data/article/5680122",
+                    "http://dig.isi.edu/autonomy/data/article/292050",
+                    "http://dig.isi.edu/autonomy/data/article/509212",
+                    "http://dig.isi.edu/autonomy/data/article/5717711",
+                    "http://dig.isi.edu/autonomy/data/article/1570486",
+                    "http://dig.isi.edu/autonomy/data/article/4739482",
+                    "http://dig.isi.edu/autonomy/data/article/1249650",
+                    "http://dig.isi.edu/autonomy/data/article/1250662",
+                    "http://dig.isi.edu/autonomy/data/article/6760219",
+                    "http://dig.isi.edu/autonomy/data/article/6943089",
+                    "http://dig.isi.edu/autonomy/data/article/351332",
+                    "http://dig.isi.edu/autonomy/data/article/4510168",
+                    "http://dig.isi.edu/autonomy/data/article/846448",
+                    "http://dig.isi.edu/autonomy/data/article/6842301",
+                    "http://dig.isi.edu/autonomy/data/article/5980357",
+                    "http://dig.isi.edu/autonomy/data/article/1272827",
+                    "http://dig.isi.edu/autonomy/data/article/6907011",
+                    "http://dig.isi.edu/autonomy/data/article/525797",
+                    "http://dig.isi.edu/autonomy/data/article/1570437",
+                    "http://dig.isi.edu/autonomy/data/article/7091046",
+                    "http://dig.isi.edu/autonomy/data/article/6630808",
+                    "http://dig.isi.edu/autonomy/data/article/4957457",
+                    "http://dig.isi.edu/autonomy/data/article/6094943",
+                    "http://dig.isi.edu/autonomy/data/article/6907588",
+                    "http://dig.isi.edu/autonomy/data/article/6678604",
+                    "http://dig.isi.edu/autonomy/data/article/4209428",
+                    "http://dig.isi.edu/autonomy/data/article/4543418",
+                    "http://dig.isi.edu/autonomy/data/article/6225146",
+                    "http://dig.isi.edu/autonomy/data/article/976240",
+                    "http://dig.isi.edu/autonomy/data/article/4225201",
+                    "http://dig.isi.edu/autonomy/data/article/1642012",
+                    "http://dig.isi.edu/autonomy/data/article/1013392",
+                    "http://dig.isi.edu/autonomy/data/article/6964294",
+                    "http://dig.isi.edu/autonomy/data/article/5509534",
+                    "http://dig.isi.edu/autonomy/data/article/6760757",
+                    "http://dig.isi.edu/autonomy/data/article/4136856",
+                    "http://dig.isi.edu/autonomy/data/article/6907309",
+                    "http://dig.isi.edu/autonomy/data/article/5980440",
+                    "http://dig.isi.edu/autonomy/data/article/7068965",
+                    "http://dig.isi.edu/autonomy/data/article/6842297",
+                    "http://dig.isi.edu/autonomy/data/article/6942758",
+                    "http://dig.isi.edu/autonomy/data/article/6329450",
+                    "http://dig.isi.edu/autonomy/data/article/6781368",
+                    "http://dig.isi.edu/autonomy/data/article/7112188",
+                    "http://dig.isi.edu/autonomy/data/article/1014709",
+                    "http://dig.isi.edu/autonomy/data/article/6011667",
+                    "http://dig.isi.edu/autonomy/data/article/5569027",
+                    "http://dig.isi.edu/autonomy/data/article/5711140",
+                    "http://dig.isi.edu/autonomy/data/article/5929484",
+                    "http://dig.isi.edu/autonomy/data/article/5509581",
+                    "http://dig.isi.edu/autonomy/data/article/325681",
+                    "http://dig.isi.edu/autonomy/data/article/1339386",
+                    "http://dig.isi.edu/autonomy/data/article/4462117",
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/6917551",
+                    "http://dig.isi.edu/autonomy/data/article/976023",
+                    "http://dig.isi.edu/autonomy/data/article/6225196",
+                    "http://dig.isi.edu/autonomy/data/article/5980179",
+                    "http://dig.isi.edu/autonomy/data/article/6514922",
+                    "http://dig.isi.edu/autonomy/data/article/518771",
+                    "http://dig.isi.edu/autonomy/data/article/5989934",
+                    "http://dig.isi.edu/autonomy/data/article/4399589",
+                    "http://dig.isi.edu/autonomy/data/article/722762",
+                    "http://dig.isi.edu/autonomy/data/article/525436",
+                    "http://dig.isi.edu/autonomy/data/article/1273070",
+                    "http://dig.isi.edu/autonomy/data/article/4543197",
+                    "http://dig.isi.edu/autonomy/data/article/4209289"
+                ],
+                "name": "V. Kumar",
+                "uri": "http://dig.isi.edu/autonomy/data/author/v.kumar"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Kientz, T.",
+                "isAuthorOf": "http://dig.isi.edu/autonomy/data/article/1014265",
+                "name": "T. Kientz",
+                "uri": "http://dig.isi.edu/autonomy/data/author/t.kientz"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Jung, S.H.",
+                "isAuthorOf": "http://dig.isi.edu/autonomy/data/article/1014265",
+                "name": "S. H. Jung",
+                "uri": "http://dig.isi.edu/autonomy/data/author/s.h.jung"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Ostrowski, J.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1545468",
+                    "http://dig.isi.edu/autonomy/data/article/4141025",
+                    "http://dig.isi.edu/autonomy/data/article/1389862",
+                    "http://dig.isi.edu/autonomy/data/article/1511612"
+                ],
+                "name": "J. Ostrowski",
+                "uri": "http://dig.isi.edu/autonomy/data/author/j.ostrowski"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Katupitiya, J.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/5174668",
+                    "http://dig.isi.edu/autonomy/data/article/1308125",
+                    "http://dig.isi.edu/autonomy/data/article/4026138",
+                    "http://dig.isi.edu/autonomy/data/article/4018826",
+                    "http://dig.isi.edu/autonomy/data/article/1389968",
+                    "http://dig.isi.edu/autonomy/data/article/6629590",
+                    "http://dig.isi.edu/autonomy/data/article/4519026",
+                    "http://dig.isi.edu/autonomy/data/article/803264",
+                    "http://dig.isi.edu/autonomy/data/article/6584249",
+                    "http://dig.isi.edu/autonomy/data/article/6584284",
+                    "http://dig.isi.edu/autonomy/data/article/4258893",
+                    "http://dig.isi.edu/autonomy/data/article/4749583",
+                    "http://dig.isi.edu/autonomy/data/article/4579153",
+                    "http://dig.isi.edu/autonomy/data/article/625229",
+                    "http://dig.isi.edu/autonomy/data/article/758624",
+                    "http://dig.isi.edu/autonomy/data/article/5399528"
+                ],
+                "name": "J. Katupitiya",
+                "uri": "http://dig.isi.edu/autonomy/data/author/j.katupitiya"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Taylor, C.J.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/976240",
+                    "http://dig.isi.edu/autonomy/data/article/1642012",
+                    "http://dig.isi.edu/autonomy/data/article/660593",
+                    "http://dig.isi.edu/autonomy/data/article/990500",
+                    "http://dig.isi.edu/autonomy/data/article/1039951",
+                    "http://dig.isi.edu/autonomy/data/article/1308928",
+                    "http://dig.isi.edu/autonomy/data/article/1570437",
+                    "http://dig.isi.edu/autonomy/data/article/1249650",
+                    "http://dig.isi.edu/autonomy/data/article/6095028",
+                    "http://dig.isi.edu/autonomy/data/article/680590",
+                    "http://dig.isi.edu/autonomy/data/article/5650272",
+                    "http://dig.isi.edu/autonomy/data/article/292154",
+                    "http://dig.isi.edu/autonomy/data/article/1248818"
+                ],
+                "name": "C. J. Taylor",
+                "uri": "http://dig.isi.edu/autonomy/data/author/c.j.taylor"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Patel, S.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/6820684",
+                    "http://dig.isi.edu/autonomy/data/article/1624538",
+                    "http://dig.isi.edu/autonomy/data/article/261279",
+                    "http://dig.isi.edu/autonomy/data/article/6207104",
+                    "http://dig.isi.edu/autonomy/data/article/140342"
+                ],
+                "name": "S. Patel",
+                "uri": "http://dig.isi.edu/autonomy/data/author/s.patel"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Conn, K.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/4269878",
+                    "http://dig.isi.edu/autonomy/data/article/4415153"
+                ],
+                "name": "K. Conn",
+                "uri": "http://dig.isi.edu/autonomy/data/author/k.conn"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Rao, R.S.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1570437"
+                ],
+                "name": "R. S. Rao",
+                "uri": "http://dig.isi.edu/autonomy/data/author/r.s.rao"
+            }
+        ],
+        "datePublished": "2002",
+        "isCitationOf": [
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/220252",
+                    "http://dig.isi.edu/autonomy/data/article/880804"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1545336"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1571165",
+                    "http://dig.isi.edu/autonomy/data/article/1453697"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/5980249"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1014265",
+                "uri": "http://dig.isi.edu/autonomy/data/article/1578697"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/844114",
+                    "http://dig.isi.edu/autonomy/data/article/773987",
+                    "http://dig.isi.edu/autonomy/data/article/1087052"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1308124"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/126145",
+                    "http://dig.isi.edu/autonomy/data/article/220252",
+                    "http://dig.isi.edu/autonomy/data/article/4543814",
+                    "http://dig.isi.edu/autonomy/data/article/6135817"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/6684577"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1265327"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1570853"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1571165"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/5545448"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1014265",
+                "uri": "http://dig.isi.edu/autonomy/data/article/4136856"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1308125"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1389968"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/88137",
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/924353",
+                    "http://dig.isi.edu/autonomy/data/article/895952"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1400729"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/973517",
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1014728",
+                    "http://dig.isi.edu/autonomy/data/article/1013256",
+                    "http://dig.isi.edu/autonomy/data/article/620053",
+                    "http://dig.isi.edu/autonomy/data/article/1014836",
+                    "http://dig.isi.edu/autonomy/data/article/952715",
+                    "http://dig.isi.edu/autonomy/data/article/4505426",
+                    "http://dig.isi.edu/autonomy/data/article/1177098"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1703648"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/894673"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1013700"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/126145",
+                    "http://dig.isi.edu/autonomy/data/article/1571165",
+                    "http://dig.isi.edu/autonomy/data/article/1453697"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/5209575"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1249650",
+                    "http://dig.isi.edu/autonomy/data/article/1571165",
+                    "http://dig.isi.edu/autonomy/data/article/1453697"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/6471833"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1308098",
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1513836",
+                    "http://dig.isi.edu/autonomy/data/article/1307480",
+                    "http://dig.isi.edu/autonomy/data/article/1513803",
+                    "http://dig.isi.edu/autonomy/data/article/1374821"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1573565"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/126145",
+                    "http://dig.isi.edu/autonomy/data/article/1558886",
+                    "http://dig.isi.edu/autonomy/data/article/4058527",
+                    "http://dig.isi.edu/autonomy/data/article/1571165",
+                    "http://dig.isi.edu/autonomy/data/article/1241568",
+                    "http://dig.isi.edu/autonomy/data/article/285583",
+                    "http://dig.isi.edu/autonomy/data/article/844041"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/4785222"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1571165",
+                    "http://dig.isi.edu/autonomy/data/article/1453697"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/5209573"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1014265",
+                    "http://dig.isi.edu/autonomy/data/article/1307480",
+                    "http://dig.isi.edu/autonomy/data/article/1045659",
+                    "http://dig.isi.edu/autonomy/data/article/1513803",
+                    "http://dig.isi.edu/autonomy/data/article/4058640"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/4339546"
+            }
+        ],
+        "keywords": [
+            "Robot sensing systems",
+            "Prototypes",
+            "assistive devices",
+            "sensors suite",
+            "mobile robots",
+            "Intelligent sensors",
+            "Robotics and automation",
+            "human robot interaction",
+            "smart wheelchairs",
+            "Human robot interaction",
+            "Wheelchairs",
+            "motion control",
+            "user interfaces",
+            "Intelligent robots",
+            "Mobile robots",
+            "intelligent control",
+            "control algorithms",
+            "Control systems",
+            "handicapped aids",
+            "Computer interfaces",
+            "vision-based human interaction interface",
+            "software architecture"
+        ],
+        "name": "Human robot interaction: application to smart wheelchairs",
+        "text": "Addresses the problem of human robot interaction with application to the design of assistive devices. We describe the design and development of a prototype of a smart wheelchair that can be commanded by a rider. Specifically, we focus on (a) the vision-based human interaction interface; (b) the suite of sensors on the chair, and (c) the software architecture and the control algorithms used to control the chair.\nAuthor(s) Rao, R.S. Gen. Robotics, Autom., Sensing & Perception Lab., Pennsylvania Univ., Philadelphia, PA, USA Conn, K. ; Jung, S.H. ; Katupitiya, J. ; Kientz, T. ; Kumar, V. ; Ostrowski, J. ; Patel, S. ; Taylor, C.J.\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "uri": "http://dig.isi.edu/autonomy/data/article/1014265"
+    },
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": "Davidson, M.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1014412",
+                    "http://dig.isi.edu/autonomy/data/article/932549",
+                    "http://dig.isi.edu/autonomy/data/article/879446"
+                ],
+                "name": "M. Davidson",
+                "uri": "http://dig.isi.edu/autonomy/data/author/m.davidson"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Yang Quan Chen",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1014412",
+                    "http://dig.isi.edu/autonomy/data/article/5418142",
+                    "http://dig.isi.edu/autonomy/data/article/5604460",
+                    "http://dig.isi.edu/autonomy/data/article/4780140",
+                    "http://dig.isi.edu/autonomy/data/article/6049953",
+                    "http://dig.isi.edu/autonomy/data/article/4267866",
+                    "http://dig.isi.edu/autonomy/data/article/4304064",
+                    "http://dig.isi.edu/autonomy/data/article/5417547"
+                ],
+                "name": "Y. Q. Chen",
+                "uri": "http://dig.isi.edu/autonomy/data/author/y.q.chen"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Berkemeier, M.",
+                "isAuthorOf": "http://dig.isi.edu/autonomy/data/article/1014412",
+                "name": "M. Berkemeier",
+                "uri": "http://dig.isi.edu/autonomy/data/author/m.berkemeier"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Bahl, V.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1014412",
+                    "http://dig.isi.edu/autonomy/data/article/932549",
+                    "http://dig.isi.edu/autonomy/data/article/1254727",
+                    "http://dig.isi.edu/autonomy/data/article/879446"
+                ],
+                "name": "V. Bahl",
+                "uri": "http://dig.isi.edu/autonomy/data/author/v.bahl"
+            },
+            {
+                "a": "Person",
+                "alternateName": [
+                    "Lili Ma",
+                    "Lin Ma",
+                    "Ma, L.",
+                    "Liang Ma",
+                    "Lei Ma",
+                    "Li Ma"
+                ],
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/6391057",
+                    "http://dig.isi.edu/autonomy/data/article/5723424",
+                    "http://dig.isi.edu/autonomy/data/article/6173293",
+                    "http://dig.isi.edu/autonomy/data/article/6580679",
+                    "http://dig.isi.edu/autonomy/data/article/6957824",
+                    "http://dig.isi.edu/autonomy/data/article/7041446",
+                    "http://dig.isi.edu/autonomy/data/article/6696718",
+                    "http://dig.isi.edu/autonomy/data/article/6739503",
+                    "http://dig.isi.edu/autonomy/data/article/1014412",
+                    "http://dig.isi.edu/autonomy/data/article/7042261",
+                    "http://dig.isi.edu/autonomy/data/article/5524406",
+                    "http://dig.isi.edu/autonomy/data/article/6626078",
+                    "http://dig.isi.edu/autonomy/data/article/4398952",
+                    "http://dig.isi.edu/autonomy/data/article/4142115",
+                    "http://dig.isi.edu/autonomy/data/article/7041407",
+                    "http://dig.isi.edu/autonomy/data/article/7022297",
+                    "http://dig.isi.edu/autonomy/data/article/6988239",
+                    "http://dig.isi.edu/autonomy/data/article/4303946"
+                ],
+                "name": "L. Ma",
+                "uri": "http://dig.isi.edu/autonomy/data/author/l.ma"
+            }
+        ],
+        "citation": [
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/4295803",
+                    "http://dig.isi.edu/autonomy/data/article/1618536",
+                    "http://dig.isi.edu/autonomy/data/article/1642107",
+                    "http://dig.isi.edu/autonomy/data/article/4694509",
+                    "http://dig.isi.edu/autonomy/data/article/1577022",
+                    "http://dig.isi.edu/autonomy/data/article/4651101",
+                    "http://dig.isi.edu/autonomy/data/article/1242198",
+                    "http://dig.isi.edu/autonomy/data/article/7028036",
+                    "http://dig.isi.edu/autonomy/data/article/4270050",
+                    "http://dig.isi.edu/autonomy/data/article/1014412",
+                    "http://dig.isi.edu/autonomy/data/article/5354130",
+                    "http://dig.isi.edu/autonomy/data/article/1184283",
+                    "http://dig.isi.edu/autonomy/data/article/1657561"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/932857"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/4295803",
+                    "http://dig.isi.edu/autonomy/data/article/1014412",
+                    "http://dig.isi.edu/autonomy/data/article/4399567",
+                    "http://dig.isi.edu/autonomy/data/article/5354526",
+                    "http://dig.isi.edu/autonomy/data/article/4150195",
+                    "http://dig.isi.edu/autonomy/data/article/4177481",
+                    "http://dig.isi.edu/autonomy/data/article/4399170"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/887449"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1642114",
+                    "http://dig.isi.edu/autonomy/data/article/6631332",
+                    "http://dig.isi.edu/autonomy/data/article/6722317",
+                    "http://dig.isi.edu/autonomy/data/article/827879",
+                    "http://dig.isi.edu/autonomy/data/article/4776719",
+                    "http://dig.isi.edu/autonomy/data/article/5415631",
+                    "http://dig.isi.edu/autonomy/data/article/4058582",
+                    "http://dig.isi.edu/autonomy/data/article/4232968",
+                    "http://dig.isi.edu/autonomy/data/article/7068798",
+                    "http://dig.isi.edu/autonomy/data/article/770041",
+                    "http://dig.isi.edu/autonomy/data/article/625301",
+                    "http://dig.isi.edu/autonomy/data/article/852909",
+                    "http://dig.isi.edu/autonomy/data/article/4209434",
+                    "http://dig.isi.edu/autonomy/data/article/1021116",
+                    "http://dig.isi.edu/autonomy/data/article/6106418",
+                    "http://dig.isi.edu/autonomy/data/article/1024909",
+                    "http://dig.isi.edu/autonomy/data/article/931519",
+                    "http://dig.isi.edu/autonomy/data/article/509435",
+                    "http://dig.isi.edu/autonomy/data/article/4267866",
+                    "http://dig.isi.edu/autonomy/data/article/572193",
+                    "http://dig.isi.edu/autonomy/data/article/815396",
+                    "http://dig.isi.edu/autonomy/data/article/588194",
+                    "http://dig.isi.edu/autonomy/data/article/6631406",
+                    "http://dig.isi.edu/autonomy/data/article/648989",
+                    "http://dig.isi.edu/autonomy/data/article/1640440",
+                    "http://dig.isi.edu/autonomy/data/article/620134",
+                    "http://dig.isi.edu/autonomy/data/article/1041409",
+                    "http://dig.isi.edu/autonomy/data/article/660593",
+                    "http://dig.isi.edu/autonomy/data/article/5218128",
+                    "http://dig.isi.edu/autonomy/data/article/6224942",
+                    "http://dig.isi.edu/autonomy/data/article/999648",
+                    "http://dig.isi.edu/autonomy/data/article/1641764",
+                    "http://dig.isi.edu/autonomy/data/article/5354130",
+                    "http://dig.isi.edu/autonomy/data/article/1013654",
+                    "http://dig.isi.edu/autonomy/data/article/5354282",
+                    "http://dig.isi.edu/autonomy/data/article/6631327",
+                    "http://dig.isi.edu/autonomy/data/article/1570655",
+                    "http://dig.isi.edu/autonomy/data/article/6640426",
+                    "http://dig.isi.edu/autonomy/data/article/1577022",
+                    "http://dig.isi.edu/autonomy/data/article/1570651",
+                    "http://dig.isi.edu/autonomy/data/article/6223282",
+                    "http://dig.isi.edu/autonomy/data/article/556025",
+                    "http://dig.isi.edu/autonomy/data/article/1236757",
+                    "http://dig.isi.edu/autonomy/data/article/761797",
+                    "http://dig.isi.edu/autonomy/data/article/912872",
+                    "http://dig.isi.edu/autonomy/data/article/4209390",
+                    "http://dig.isi.edu/autonomy/data/article/5174787",
+                    "http://dig.isi.edu/autonomy/data/article/7068522",
+                    "http://dig.isi.edu/autonomy/data/article/680590",
+                    "http://dig.isi.edu/autonomy/data/article/5420695",
+                    "http://dig.isi.edu/autonomy/data/article/4059086",
+                    "http://dig.isi.edu/autonomy/data/article/5472483",
+                    "http://dig.isi.edu/autonomy/data/article/963059",
+                    "http://dig.isi.edu/autonomy/data/article/1014412",
+                    "http://dig.isi.edu/autonomy/data/article/5509507",
+                    "http://dig.isi.edu/autonomy/data/article/1458404",
+                    "http://dig.isi.edu/autonomy/data/article/1470548",
+                    "http://dig.isi.edu/autonomy/data/article/4209516",
+                    "http://dig.isi.edu/autonomy/data/article/845325",
+                    "http://dig.isi.edu/autonomy/data/article/1014303",
+                    "http://dig.isi.edu/autonomy/data/article/1241601",
+                    "http://dig.isi.edu/autonomy/data/article/1014302",
+                    "http://dig.isi.edu/autonomy/data/article/525279",
+                    "http://dig.isi.edu/autonomy/data/article/5675264",
+                    "http://dig.isi.edu/autonomy/data/article/813033",
+                    "http://dig.isi.edu/autonomy/data/article/1416974",
+                    "http://dig.isi.edu/autonomy/data/article/4209333",
+                    "http://dig.isi.edu/autonomy/data/article/6631239",
+                    "http://dig.isi.edu/autonomy/data/article/6850139",
+                    "http://dig.isi.edu/autonomy/data/article/5701947",
+                    "http://dig.isi.edu/autonomy/data/article/6471764",
+                    "http://dig.isi.edu/autonomy/data/article/6631232",
+                    "http://dig.isi.edu/autonomy/data/article/364025",
+                    "http://dig.isi.edu/autonomy/data/article/6160558",
+                    "http://dig.isi.edu/autonomy/data/article/6889849",
+                    "http://dig.isi.edu/autonomy/data/article/1642273",
+                    "http://dig.isi.edu/autonomy/data/article/6729274",
+                    "http://dig.isi.edu/autonomy/data/article/861486",
+                    "http://dig.isi.edu/autonomy/data/article/6901119",
+                    "http://dig.isi.edu/autonomy/data/article/5584100",
+                    "http://dig.isi.edu/autonomy/data/article/5354786",
+                    "http://dig.isi.edu/autonomy/data/article/846339",
+                    "http://dig.isi.edu/autonomy/data/article/1255510",
+                    "http://dig.isi.edu/autonomy/data/article/1571892",
+                    "http://dig.isi.edu/autonomy/data/article/814155",
+                    "http://dig.isi.edu/autonomy/data/article/4209552",
+                    "http://dig.isi.edu/autonomy/data/article/260267",
+                    "http://dig.isi.edu/autonomy/data/article/1011251",
+                    "http://dig.isi.edu/autonomy/data/article/5223594",
+                    "http://dig.isi.edu/autonomy/data/article/6943247",
+                    "http://dig.isi.edu/autonomy/data/article/1708771",
+                    "http://dig.isi.edu/autonomy/data/article/710821",
+                    "http://dig.isi.edu/autonomy/data/article/1442110",
+                    "http://dig.isi.edu/autonomy/data/article/5692366",
+                    "http://dig.isi.edu/autonomy/data/article/1013420",
+                    "http://dig.isi.edu/autonomy/data/article/4058477",
+                    "http://dig.isi.edu/autonomy/data/article/5686842",
+                    "http://dig.isi.edu/autonomy/data/article/503860",
+                    "http://dig.isi.edu/autonomy/data/article/6710225",
+                    "http://dig.isi.edu/autonomy/data/article/936770",
+                    "http://dig.isi.edu/autonomy/data/article/5204256",
+                    "http://dig.isi.edu/autonomy/data/article/5337950",
+                    "http://dig.isi.edu/autonomy/data/article/7068475",
+                    "http://dig.isi.edu/autonomy/data/article/6696411",
+                    "http://dig.isi.edu/autonomy/data/article/6237321"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/143350"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/4295803",
+                    "http://dig.isi.edu/autonomy/data/article/1014412"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/846334"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/770041",
+                    "http://dig.isi.edu/autonomy/data/article/5650301",
+                    "http://dig.isi.edu/autonomy/data/article/852909",
+                    "http://dig.isi.edu/autonomy/data/article/6640426",
+                    "http://dig.isi.edu/autonomy/data/article/728949",
+                    "http://dig.isi.edu/autonomy/data/article/929050",
+                    "http://dig.isi.edu/autonomy/data/article/1400773",
+                    "http://dig.isi.edu/autonomy/data/article/914782",
+                    "http://dig.isi.edu/autonomy/data/article/761797",
+                    "http://dig.isi.edu/autonomy/data/article/1600668",
+                    "http://dig.isi.edu/autonomy/data/article/1014412",
+                    "http://dig.isi.edu/autonomy/data/article/5508311",
+                    "http://dig.isi.edu/autonomy/data/article/1545348"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/611326"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": "http://dig.isi.edu/autonomy/data/article/1014412",
+                "uri": "http://dig.isi.edu/autonomy/data/article/574798"
+            }
+        ],
+        "datePublished": "2002",
+        "isCitationOf": [
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/5524177",
+                    "http://dig.isi.edu/autonomy/data/article/1014412",
+                    "http://dig.isi.edu/autonomy/data/article/5415631",
+                    "http://dig.isi.edu/autonomy/data/article/853110",
+                    "http://dig.isi.edu/autonomy/data/article/1577022"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/6871522"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1014412",
+                "uri": "http://dig.isi.edu/autonomy/data/article/4058910"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/887449",
+                    "http://dig.isi.edu/autonomy/data/article/1014412"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1570595"
+            }
+        ],
+        "keywords": [
+            "Robot sensing systems",
+            "omni-directional mobile robot",
+            "mobile robots",
+            "parking lot line alignment",
+            "proportional controller",
+            "ODIS",
+            "position reference resetting",
+            "orientation reference resetting",
+            "robot vision",
+            "Intelligent robots",
+            "Mobile robots",
+            "image Jacobian matrix",
+            "Sensor arrays",
+            "Robot vision systems",
+            "Jacobian matrices",
+            "automobile inspection",
+            "Robot kinematics",
+            "Remotely operated vehicles",
+            "Cameras",
+            "Visual servoing",
+            "visual servoing"
+        ],
+        "name": "Visual servoing of an omni-directional mobile robot for alignment with parking lot lines",
+        "text": "ODIS is an omni-directional mobile robot designed to autonomously or semi-autonomously inspect automobiles in a parking lot. Periodically, its position and orientation references need to be reset. This paper considers visual servoing to parking lot lines as one possible approach. Analysis and simulations demonstrate that a surprisingly simple proportional controller in the image coordinates can accomplish position and orientation alignment with parking lot lines. Unlike previous work, no image Jacobian matrix is necessary. Knowledge of the camera focal length is not required, but the camera and vehicle axes are assumed to be aligned, and the vehicle is assumed to rotate about the camera frame's y-axis.\nAuthor(s) Berkemeier, M. Dept. of Electr. & Comput. Eng., Utah State Univ., Logan, UT, USA Davidson, M. ; Bahl, V. ; Yang Quan Chen ; Lili Ma\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "uri": "http://dig.isi.edu/autonomy/data/article/1014412"
+    },
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": "Imachi, K.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1106546",
+                    "http://dig.isi.edu/autonomy/data/article/1018969"
+                ],
+                "name": "K. Imachi",
+                "uri": "http://dig.isi.edu/autonomy/data/author/k.imachi"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Saito, I.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1106546",
+                    "http://dig.isi.edu/autonomy/data/article/1018969"
+                ],
+                "name": "I. Saito",
+                "uri": "http://dig.isi.edu/autonomy/data/author/i.saito"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Mitsui, M.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1106546",
+                    "http://dig.isi.edu/autonomy/data/article/1018969",
+                    "http://dig.isi.edu/autonomy/data/article/1196757"
+                ],
+                "name": "M. Mitsui",
+                "uri": "http://dig.isi.edu/autonomy/data/author/m.mitsui"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Mabuchi, K.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1017370",
+                    "http://dig.isi.edu/autonomy/data/article/1106546",
+                    "http://dig.isi.edu/autonomy/data/article/6346277",
+                    "http://dig.isi.edu/autonomy/data/article/1018969",
+                    "http://dig.isi.edu/autonomy/data/article/1241766",
+                    "http://dig.isi.edu/autonomy/data/article/646447",
+                    "http://dig.isi.edu/autonomy/data/article/1196757"
+                ],
+                "name": "K. Mabuchi",
+                "uri": "http://dig.isi.edu/autonomy/data/author/k.mabuchi"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Saito, T.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/4635356",
+                    "http://dig.isi.edu/autonomy/data/article/6081509",
+                    "http://dig.isi.edu/autonomy/data/article/1043887",
+                    "http://dig.isi.edu/autonomy/data/article/7024416",
+                    "http://dig.isi.edu/autonomy/data/article/977818",
+                    "http://dig.isi.edu/autonomy/data/article/1212912",
+                    "http://dig.isi.edu/autonomy/data/article/541529",
+                    "http://dig.isi.edu/autonomy/data/article/1222073",
+                    "http://dig.isi.edu/autonomy/data/article/340840",
+                    "http://dig.isi.edu/autonomy/data/article/6776624",
+                    "http://dig.isi.edu/autonomy/data/article/1389877",
+                    "http://dig.isi.edu/autonomy/data/article/831591",
+                    "http://dig.isi.edu/autonomy/data/article/1347458",
+                    "http://dig.isi.edu/autonomy/data/article/252259",
+                    "http://dig.isi.edu/autonomy/data/article/1238565",
+                    "http://dig.isi.edu/autonomy/data/article/4342247",
+                    "http://dig.isi.edu/autonomy/data/article/1018969",
+                    "http://dig.isi.edu/autonomy/data/article/1241766",
+                    "http://dig.isi.edu/autonomy/data/article/1491912",
+                    "http://dig.isi.edu/autonomy/data/article/4655044",
+                    "http://dig.isi.edu/autonomy/data/article/100800",
+                    "http://dig.isi.edu/autonomy/data/article/1242211",
+                    "http://dig.isi.edu/autonomy/data/article/861433",
+                    "http://dig.isi.edu/autonomy/data/article/621833",
+                    "http://dig.isi.edu/autonomy/data/article/112252",
+                    "http://dig.isi.edu/autonomy/data/article/5947902",
+                    "http://dig.isi.edu/autonomy/data/article/977276",
+                    "http://dig.isi.edu/autonomy/data/article/814934",
+                    "http://dig.isi.edu/autonomy/data/article/252127",
+                    "http://dig.isi.edu/autonomy/data/article/861318",
+                    "http://dig.isi.edu/autonomy/data/article/4018737",
+                    "http://dig.isi.edu/autonomy/data/article/614391",
+                    "http://dig.isi.edu/autonomy/data/article/721254",
+                    "http://dig.isi.edu/autonomy/data/article/6630776",
+                    "http://dig.isi.edu/autonomy/data/article/4692373",
+                    "http://dig.isi.edu/autonomy/data/article/6836548"
+                ],
+                "name": "T. Saito",
+                "uri": "http://dig.isi.edu/autonomy/data/author/t.saito"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Isoyama, T.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1106546",
+                    "http://dig.isi.edu/autonomy/data/article/1018969"
+                ],
+                "name": "T. Isoyama",
+                "uri": "http://dig.isi.edu/autonomy/data/author/t.isoyama"
+            },
+            {
+                "a": "Person",
+                "alternateName": [
+                    "Tohru Suzuki",
+                    "Suzuki, T."
+                ],
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/5669532",
+                    "http://dig.isi.edu/autonomy/data/article/1280085",
+                    "http://dig.isi.edu/autonomy/data/article/6318316",
+                    "http://dig.isi.edu/autonomy/data/article/6920056",
+                    "http://dig.isi.edu/autonomy/data/article/351220",
+                    "http://dig.isi.edu/autonomy/data/article/6005278",
+                    "http://dig.isi.edu/autonomy/data/article/5335225",
+                    "http://dig.isi.edu/autonomy/data/article/972540",
+                    "http://dig.isi.edu/autonomy/data/article/398454",
+                    "http://dig.isi.edu/autonomy/data/article/679824",
+                    "http://dig.isi.edu/autonomy/data/article/5158867",
+                    "http://dig.isi.edu/autonomy/data/article/1323365",
+                    "http://dig.isi.edu/autonomy/data/article/6491075",
+                    "http://dig.isi.edu/autonomy/data/article/811727",
+                    "http://dig.isi.edu/autonomy/data/article/1018969",
+                    "http://dig.isi.edu/autonomy/data/article/772548",
+                    "http://dig.isi.edu/autonomy/data/article/637947",
+                    "http://dig.isi.edu/autonomy/data/article/506173",
+                    "http://dig.isi.edu/autonomy/data/article/1241766",
+                    "http://dig.isi.edu/autonomy/data/article/1433300",
+                    "http://dig.isi.edu/autonomy/data/article/4399391",
+                    "http://dig.isi.edu/autonomy/data/article/6185384",
+                    "http://dig.isi.edu/autonomy/data/article/6378262",
+                    "http://dig.isi.edu/autonomy/data/article/1017370",
+                    "http://dig.isi.edu/autonomy/data/article/1374726",
+                    "http://dig.isi.edu/autonomy/data/article/972443",
+                    "http://dig.isi.edu/autonomy/data/article/6147462",
+                    "http://dig.isi.edu/autonomy/data/article/6677292",
+                    "http://dig.isi.edu/autonomy/data/article/5420654",
+                    "http://dig.isi.edu/autonomy/data/article/6696378",
+                    "http://dig.isi.edu/autonomy/data/article/933205",
+                    "http://dig.isi.edu/autonomy/data/article/1323367",
+                    "http://dig.isi.edu/autonomy/data/article/724685",
+                    "http://dig.isi.edu/autonomy/data/article/4374916",
+                    "http://dig.isi.edu/autonomy/data/article/1157867",
+                    "http://dig.isi.edu/autonomy/data/article/6483533",
+                    "http://dig.isi.edu/autonomy/data/article/5045978",
+                    "http://dig.isi.edu/autonomy/data/article/1106546",
+                    "http://dig.isi.edu/autonomy/data/article/1310009",
+                    "http://dig.isi.edu/autonomy/data/article/1491539",
+                    "http://dig.isi.edu/autonomy/data/article/5633775",
+                    "http://dig.isi.edu/autonomy/data/article/6760221",
+                    "http://dig.isi.edu/autonomy/data/article/6346277",
+                    "http://dig.isi.edu/autonomy/data/article/6921875",
+                    "http://dig.isi.edu/autonomy/data/article/1196757",
+                    "http://dig.isi.edu/autonomy/data/article/7018607",
+                    "http://dig.isi.edu/autonomy/data/article/5980129",
+                    "http://dig.isi.edu/autonomy/data/article/1554325",
+                    "http://dig.isi.edu/autonomy/data/article/4481184"
+                ],
+                "name": "T. Suzuki",
+                "uri": "http://dig.isi.edu/autonomy/data/author/t.suzuki"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Chinzei, T.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1106546",
+                    "http://dig.isi.edu/autonomy/data/article/579900",
+                    "http://dig.isi.edu/autonomy/data/article/1017370",
+                    "http://dig.isi.edu/autonomy/data/article/1018969",
+                    "http://dig.isi.edu/autonomy/data/article/646447"
+                ],
+                "name": "T. Chinzei",
+                "uri": "http://dig.isi.edu/autonomy/data/author/t.chinzei"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Ohkura, M.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1106546",
+                    "http://dig.isi.edu/autonomy/data/article/1018969",
+                    "http://dig.isi.edu/autonomy/data/article/1196757"
+                ],
+                "name": "M. Ohkura",
+                "uri": "http://dig.isi.edu/autonomy/data/author/m.ohkura"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Kakutal, N.",
+                "isAuthorOf": "http://dig.isi.edu/autonomy/data/article/1018969",
+                "name": "N. Kakutal",
+                "uri": "http://dig.isi.edu/autonomy/data/author/n.kakutal"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Inagaki, F.",
+                "isAuthorOf": "http://dig.isi.edu/autonomy/data/article/1018969",
+                "name": "F. Inagaki",
+                "uri": "http://dig.isi.edu/autonomy/data/author/f.inagaki"
+            }
+        ],
+        "citation": [
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1018969",
+                    "http://dig.isi.edu/autonomy/data/article/1241766"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/758814"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1106546",
+                    "http://dig.isi.edu/autonomy/data/article/1018969",
+                    "http://dig.isi.edu/autonomy/data/article/1196757"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/745946"
+            }
+        ],
+        "datePublished": "2001",
+        "isCitationOf": {
+            "a": "ScholarlyArticle",
+            "citation": [
+                "http://dig.isi.edu/autonomy/data/article/1106546",
+                "http://dig.isi.edu/autonomy/data/article/1018969"
+            ],
+            "uri": "http://dig.isi.edu/autonomy/data/article/1196757"
+        },
+        "keywords": [
+            "Animals",
+            "Skin",
+            "Autonomic nervous system",
+            "cardiology",
+            "animal experiments",
+            "artificial heart control",
+            "cardiac sympathetic nerve",
+            "Medical control systems",
+            "Artificial heart",
+            "biocontrol",
+            "long-term stable recording",
+            "Nervous system",
+            "autonomic nervous signals",
+            "Control systems",
+            "Electrodes",
+            "algorithms",
+            "man-machine systems",
+            "neurophysiology",
+            "Optimal control",
+            "Prosthetics",
+            "artificial organs"
+        ],
+        "name": "Control of artificial hearts using autonomic nervous signals",
+        "text": "In order to develop an artificial heart system capable of being controlled by autonomic nervous signals, we have studied the methods of long-term stable recording of autonomic nervous signals and algorithms to utilize those signals to control an artificial heart system optimally. In this study, we have focused on the feasibility of the control of an artificial heart using the signals recorded from the cardiac sympathetic nerve and other nerves through animal experiments.\nAuthor(s) Suzuki, T. Center for Collaborative Res., Univ. of Tokyo, Japan Mitsui, M. ; Inagaki, F. ; Ohkura, M. ; Saito, T. ; Kakutal, N. ; Isoyama, T. ; Saito, I. ; Chinzei, T. ; Imachi, K. ; Mabuchi, K.\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "tika_location": {
+            "geo_lat": "-7.9377",
+            "geo_lng": "112.0931",
+            "geo_name": "Japan"
+        },
+        "uri": "http://dig.isi.edu/autonomy/data/article/1018969"
+    },
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": "Leguizamo, C.P.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1245355",
+                    "http://dig.isi.edu/autonomy/data/article/960672",
+                    "http://dig.isi.edu/autonomy/data/article/1387137",
+                    "http://dig.isi.edu/autonomy/data/article/1194650",
+                    "http://dig.isi.edu/autonomy/data/article/1238084",
+                    "http://dig.isi.edu/autonomy/data/article/1194670",
+                    "http://dig.isi.edu/autonomy/data/article/1452012",
+                    "http://dig.isi.edu/autonomy/data/article/1021741",
+                    "http://dig.isi.edu/autonomy/data/article/1452036",
+                    "http://dig.isi.edu/autonomy/data/article/1204330"
+                ],
+                "name": "C. P. Leguizamo",
+                "uri": "http://dig.isi.edu/autonomy/data/author/c.p.leguizamo"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Mori, K.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/812692",
+                    "http://dig.isi.edu/autonomy/data/article/7028141",
+                    "http://dig.isi.edu/autonomy/data/article/960672",
+                    "http://dig.isi.edu/autonomy/data/article/1387137",
+                    "http://dig.isi.edu/autonomy/data/article/5207362",
+                    "http://dig.isi.edu/autonomy/data/article/4404744",
+                    "http://dig.isi.edu/autonomy/data/article/5741368",
+                    "http://dig.isi.edu/autonomy/data/article/917450",
+                    "http://dig.isi.edu/autonomy/data/article/6142263",
+                    "http://dig.isi.edu/autonomy/data/article/818817",
+                    "http://dig.isi.edu/autonomy/data/article/5207360",
+                    "http://dig.isi.edu/autonomy/data/article/917453",
+                    "http://dig.isi.edu/autonomy/data/article/5208120",
+                    "http://dig.isi.edu/autonomy/data/article/5559852",
+                    "http://dig.isi.edu/autonomy/data/article/217485",
+                    "http://dig.isi.edu/autonomy/data/article/5207365",
+                    "http://dig.isi.edu/autonomy/data/article/880884",
+                    "http://dig.isi.edu/autonomy/data/article/6965850",
+                    "http://dig.isi.edu/autonomy/data/article/1623272",
+                    "http://dig.isi.edu/autonomy/data/article/731630",
+                    "http://dig.isi.edu/autonomy/data/article/880882",
+                    "http://dig.isi.edu/autonomy/data/article/1636214",
+                    "http://dig.isi.edu/autonomy/data/article/4757170",
+                    "http://dig.isi.edu/autonomy/data/article/880907",
+                    "http://dig.isi.edu/autonomy/data/article/880905",
+                    "http://dig.isi.edu/autonomy/data/article/1640261",
+                    "http://dig.isi.edu/autonomy/data/article/4279059",
+                    "http://dig.isi.edu/autonomy/data/article/825212",
+                    "http://dig.isi.edu/autonomy/data/article/5207370",
+                    "http://dig.isi.edu/autonomy/data/article/4577845",
+                    "http://dig.isi.edu/autonomy/data/article/4577844",
+                    "http://dig.isi.edu/autonomy/data/article/5207372",
+                    "http://dig.isi.edu/autonomy/data/article/5207375",
+                    "http://dig.isi.edu/autonomy/data/article/1281756",
+                    "http://dig.isi.edu/autonomy/data/article/5741376",
+                    "http://dig.isi.edu/autonomy/data/article/1452017",
+                    "http://dig.isi.edu/autonomy/data/article/5207369",
+                    "http://dig.isi.edu/autonomy/data/article/5741381",
+                    "http://dig.isi.edu/autonomy/data/article/7098245",
+                    "http://dig.isi.edu/autonomy/data/article/5741380",
+                    "http://dig.isi.edu/autonomy/data/article/7098243",
+                    "http://dig.isi.edu/autonomy/data/article/4279060",
+                    "http://dig.isi.edu/autonomy/data/article/1405494",
+                    "http://dig.isi.edu/autonomy/data/article/5741294",
+                    "http://dig.isi.edu/autonomy/data/article/1316618",
+                    "http://dig.isi.edu/autonomy/data/article/1648890",
+                    "http://dig.isi.edu/autonomy/data/article/1193965",
+                    "http://dig.isi.edu/autonomy/data/article/5741290",
+                    "http://dig.isi.edu/autonomy/data/article/5235023",
+                    "http://dig.isi.edu/autonomy/data/article/5207385",
+                    "http://dig.isi.edu/autonomy/data/article/1611731",
+                    "http://dig.isi.edu/autonomy/data/article/1609889",
+                    "http://dig.isi.edu/autonomy/data/article/4144667",
+                    "http://dig.isi.edu/autonomy/data/article/1241211",
+                    "http://dig.isi.edu/autonomy/data/article/4708898",
+                    "http://dig.isi.edu/autonomy/data/article/262725",
+                    "http://dig.isi.edu/autonomy/data/article/5741287",
+                    "http://dig.isi.edu/autonomy/data/article/1358375",
+                    "http://dig.isi.edu/autonomy/data/article/532610",
+                    "http://dig.isi.edu/autonomy/data/article/6139112",
+                    "http://dig.isi.edu/autonomy/data/article/969638",
+                    "http://dig.isi.edu/autonomy/data/article/1452036",
+                    "http://dig.isi.edu/autonomy/data/article/1281732",
+                    "http://dig.isi.edu/autonomy/data/article/5741317",
+                    "http://dig.isi.edu/autonomy/data/article/823164",
+                    "http://dig.isi.edu/autonomy/data/article/5741316",
+                    "http://dig.isi.edu/autonomy/data/article/344143",
+                    "http://dig.isi.edu/autonomy/data/article/838470",
+                    "http://dig.isi.edu/autonomy/data/article/880877",
+                    "http://dig.isi.edu/autonomy/data/article/1316630",
+                    "http://dig.isi.edu/autonomy/data/article/5741313",
+                    "http://dig.isi.edu/autonomy/data/article/4625589",
+                    "http://dig.isi.edu/autonomy/data/article/4340552",
+                    "http://dig.isi.edu/autonomy/data/article/809492",
+                    "http://dig.isi.edu/autonomy/data/article/1241081",
+                    "http://dig.isi.edu/autonomy/data/article/4606715",
+                    "http://dig.isi.edu/autonomy/data/article/5577275",
+                    "http://dig.isi.edu/autonomy/data/article/4606713",
+                    "http://dig.isi.edu/autonomy/data/article/5158869",
+                    "http://dig.isi.edu/autonomy/data/article/895472",
+                    "http://dig.isi.edu/autonomy/data/article/1662535",
+                    "http://dig.isi.edu/autonomy/data/article/1194670",
+                    "http://dig.isi.edu/autonomy/data/article/1593498",
+                    "http://dig.isi.edu/autonomy/data/article/5158864",
+                    "http://dig.isi.edu/autonomy/data/article/666794",
+                    "http://dig.isi.edu/autonomy/data/article/6258181",
+                    "http://dig.isi.edu/autonomy/data/article/1173103",
+                    "http://dig.isi.edu/autonomy/data/article/1691131",
+                    "http://dig.isi.edu/autonomy/data/article/1193957",
+                    "http://dig.isi.edu/autonomy/data/article/398988",
+                    "http://dig.isi.edu/autonomy/data/article/5667179",
+                    "http://dig.isi.edu/autonomy/data/article/6727645",
+                    "http://dig.isi.edu/autonomy/data/article/1297271",
+                    "http://dig.isi.edu/autonomy/data/article/4654097",
+                    "http://dig.isi.edu/autonomy/data/article/1691138",
+                    "http://dig.isi.edu/autonomy/data/article/6113891",
+                    "http://dig.isi.edu/autonomy/data/article/1021741",
+                    "http://dig.isi.edu/autonomy/data/article/1173105",
+                    "http://dig.isi.edu/autonomy/data/article/4061158",
+                    "http://dig.isi.edu/autonomy/data/article/5741282",
+                    "http://dig.isi.edu/autonomy/data/article/1173106",
+                    "http://dig.isi.edu/autonomy/data/article/4144672",
+                    "http://dig.isi.edu/autonomy/data/article/4144675",
+                    "http://dig.isi.edu/autonomy/data/article/1245345",
+                    "http://dig.isi.edu/autonomy/data/article/4144674",
+                    "http://dig.isi.edu/autonomy/data/article/1193952",
+                    "http://dig.isi.edu/autonomy/data/article/917396",
+                    "http://dig.isi.edu/autonomy/data/article/624965",
+                    "http://dig.isi.edu/autonomy/data/article/1193950",
+                    "http://dig.isi.edu/autonomy/data/article/4144678",
+                    "http://dig.isi.edu/autonomy/data/article/780815",
+                    "http://dig.isi.edu/autonomy/data/article/6063056",
+                    "http://dig.isi.edu/autonomy/data/article/1193955",
+                    "http://dig.isi.edu/autonomy/data/article/4683118",
+                    "http://dig.isi.edu/autonomy/data/article/1452067",
+                    "http://dig.isi.edu/autonomy/data/article/4030868",
+                    "http://dig.isi.edu/autonomy/data/article/5575555",
+                    "http://dig.isi.edu/autonomy/data/article/1358669",
+                    "http://dig.isi.edu/autonomy/data/article/1204330",
+                    "http://dig.isi.edu/autonomy/data/article/5741343",
+                    "http://dig.isi.edu/autonomy/data/article/1194646",
+                    "http://dig.isi.edu/autonomy/data/article/1245355",
+                    "http://dig.isi.edu/autonomy/data/article/1194649",
+                    "http://dig.isi.edu/autonomy/data/article/838428",
+                    "http://dig.isi.edu/autonomy/data/article/1194653",
+                    "http://dig.isi.edu/autonomy/data/article/1194643",
+                    "http://dig.isi.edu/autonomy/data/article/1194644",
+                    "http://dig.isi.edu/autonomy/data/article/1194650",
+                    "http://dig.isi.edu/autonomy/data/article/5494389",
+                    "http://dig.isi.edu/autonomy/data/article/5207332",
+                    "http://dig.isi.edu/autonomy/data/article/1659218",
+                    "http://dig.isi.edu/autonomy/data/article/1045056",
+                    "http://dig.isi.edu/autonomy/data/article/1204288",
+                    "http://dig.isi.edu/autonomy/data/article/1203528",
+                    "http://dig.isi.edu/autonomy/data/article/4153035",
+                    "http://dig.isi.edu/autonomy/data/article/6754600",
+                    "http://dig.isi.edu/autonomy/data/article/1203523",
+                    "http://dig.isi.edu/autonomy/data/article/1238084",
+                    "http://dig.isi.edu/autonomy/data/article/1607325"
+                ],
+                "name": "K. Mori",
+                "uri": "http://dig.isi.edu/autonomy/data/author/k.mori"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Kato, S.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/240415",
+                    "http://dig.isi.edu/autonomy/data/article/960672",
+                    "http://dig.isi.edu/autonomy/data/article/1589962",
+                    "http://dig.isi.edu/autonomy/data/article/900851",
+                    "http://dig.isi.edu/autonomy/data/article/1389622",
+                    "http://dig.isi.edu/autonomy/data/article/4699900",
+                    "http://dig.isi.edu/autonomy/data/article/5352007",
+                    "http://dig.isi.edu/autonomy/data/article/917450",
+                    "http://dig.isi.edu/autonomy/data/article/5480081",
+                    "http://dig.isi.edu/autonomy/data/article/1021741",
+                    "http://dig.isi.edu/autonomy/data/article/1249912",
+                    "http://dig.isi.edu/autonomy/data/article/5346563",
+                    "http://dig.isi.edu/autonomy/data/article/6614255",
+                    "http://dig.isi.edu/autonomy/data/article/1307230",
+                    "http://dig.isi.edu/autonomy/data/article/1642261",
+                    "http://dig.isi.edu/autonomy/data/article/1438003",
+                    "http://dig.isi.edu/autonomy/data/article/507197",
+                    "http://dig.isi.edu/autonomy/data/article/318137",
+                    "http://dig.isi.edu/autonomy/data/article/594218",
+                    "http://dig.isi.edu/autonomy/data/article/6102172",
+                    "http://dig.isi.edu/autonomy/data/article/1249946",
+                    "http://dig.isi.edu/autonomy/data/article/880907",
+                    "http://dig.isi.edu/autonomy/data/article/1421274",
+                    "http://dig.isi.edu/autonomy/data/article/566411"
+                ],
+                "name": "S. Kato",
+                "uri": "http://dig.isi.edu/autonomy/data/author/s.kato"
+            }
+        ],
+        "citation": [
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/880884",
+                    "http://dig.isi.edu/autonomy/data/article/1021741"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/812692"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/5207369",
+                    "http://dig.isi.edu/autonomy/data/article/1452012",
+                    "http://dig.isi.edu/autonomy/data/article/1021741",
+                    "http://dig.isi.edu/autonomy/data/article/4606715"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/880905"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/5207369",
+                    "http://dig.isi.edu/autonomy/data/article/1245355",
+                    "http://dig.isi.edu/autonomy/data/article/1387137",
+                    "http://dig.isi.edu/autonomy/data/article/1238084",
+                    "http://dig.isi.edu/autonomy/data/article/1452012",
+                    "http://dig.isi.edu/autonomy/data/article/1021741",
+                    "http://dig.isi.edu/autonomy/data/article/1452013",
+                    "http://dig.isi.edu/autonomy/data/article/1452036"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/960672"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/5207329",
+                    "http://dig.isi.edu/autonomy/data/article/6019954",
+                    "http://dig.isi.edu/autonomy/data/article/1387137",
+                    "http://dig.isi.edu/autonomy/data/article/5207362",
+                    "http://dig.isi.edu/autonomy/data/article/1284104",
+                    "http://dig.isi.edu/autonomy/data/article/5207385",
+                    "http://dig.isi.edu/autonomy/data/article/1452150",
+                    "http://dig.isi.edu/autonomy/data/article/1245355",
+                    "http://dig.isi.edu/autonomy/data/article/731630",
+                    "http://dig.isi.edu/autonomy/data/article/895472",
+                    "http://dig.isi.edu/autonomy/data/article/1194650",
+                    "http://dig.isi.edu/autonomy/data/article/5741287",
+                    "http://dig.isi.edu/autonomy/data/article/1173103",
+                    "http://dig.isi.edu/autonomy/data/article/1045056",
+                    "http://dig.isi.edu/autonomy/data/article/1452038",
+                    "http://dig.isi.edu/autonomy/data/article/1452012",
+                    "http://dig.isi.edu/autonomy/data/article/1021741",
+                    "http://dig.isi.edu/autonomy/data/article/1452036",
+                    "http://dig.isi.edu/autonomy/data/article/4061158",
+                    "http://dig.isi.edu/autonomy/data/article/1452037",
+                    "http://dig.isi.edu/autonomy/data/article/5741376",
+                    "http://dig.isi.edu/autonomy/data/article/1281732",
+                    "http://dig.isi.edu/autonomy/data/article/1173106",
+                    "http://dig.isi.edu/autonomy/data/article/5741374",
+                    "http://dig.isi.edu/autonomy/data/article/1194689",
+                    "http://dig.isi.edu/autonomy/data/article/838436",
+                    "http://dig.isi.edu/autonomy/data/article/4144675",
+                    "http://dig.isi.edu/autonomy/data/article/1245345",
+                    "http://dig.isi.edu/autonomy/data/article/880891",
+                    "http://dig.isi.edu/autonomy/data/article/4144674",
+                    "http://dig.isi.edu/autonomy/data/article/1203523",
+                    "http://dig.isi.edu/autonomy/data/article/1238084",
+                    "http://dig.isi.edu/autonomy/data/article/917396",
+                    "http://dig.isi.edu/autonomy/data/article/880877",
+                    "http://dig.isi.edu/autonomy/data/article/1316630"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/666840"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/812692",
+                    "http://dig.isi.edu/autonomy/data/article/4799446",
+                    "http://dig.isi.edu/autonomy/data/article/809492",
+                    "http://dig.isi.edu/autonomy/data/article/4749531",
+                    "http://dig.isi.edu/autonomy/data/article/1021741",
+                    "http://dig.isi.edu/autonomy/data/article/6628431",
+                    "http://dig.isi.edu/autonomy/data/article/1506385",
+                    "http://dig.isi.edu/autonomy/data/article/880884",
+                    "http://dig.isi.edu/autonomy/data/article/6225359",
+                    "http://dig.isi.edu/autonomy/data/article/1238084",
+                    "http://dig.isi.edu/autonomy/data/article/1194650",
+                    "http://dig.isi.edu/autonomy/data/article/1044354",
+                    "http://dig.isi.edu/autonomy/data/article/880907"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/565655"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/666794",
+                    "http://dig.isi.edu/autonomy/data/article/838428",
+                    "http://dig.isi.edu/autonomy/data/article/997665",
+                    "http://dig.isi.edu/autonomy/data/article/809492",
+                    "http://dig.isi.edu/autonomy/data/article/838432",
+                    "http://dig.isi.edu/autonomy/data/article/1021741",
+                    "http://dig.isi.edu/autonomy/data/article/880907"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/590611"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/812692",
+                    "http://dig.isi.edu/autonomy/data/article/526355",
+                    "http://dig.isi.edu/autonomy/data/article/1614903",
+                    "http://dig.isi.edu/autonomy/data/article/590611",
+                    "http://dig.isi.edu/autonomy/data/article/5203522",
+                    "http://dig.isi.edu/autonomy/data/article/1387137",
+                    "http://dig.isi.edu/autonomy/data/article/5207362",
+                    "http://dig.isi.edu/autonomy/data/article/5741368",
+                    "http://dig.isi.edu/autonomy/data/article/4404744",
+                    "http://dig.isi.edu/autonomy/data/article/6142263",
+                    "http://dig.isi.edu/autonomy/data/article/818817",
+                    "http://dig.isi.edu/autonomy/data/article/5207360",
+                    "http://dig.isi.edu/autonomy/data/article/5207361",
+                    "http://dig.isi.edu/autonomy/data/article/5208120",
+                    "http://dig.isi.edu/autonomy/data/article/917453",
+                    "http://dig.isi.edu/autonomy/data/article/5207365",
+                    "http://dig.isi.edu/autonomy/data/article/880884",
+                    "http://dig.isi.edu/autonomy/data/article/5741370",
+                    "http://dig.isi.edu/autonomy/data/article/5741373",
+                    "http://dig.isi.edu/autonomy/data/article/731630",
+                    "http://dig.isi.edu/autonomy/data/article/880885",
+                    "http://dig.isi.edu/autonomy/data/article/5170951",
+                    "http://dig.isi.edu/autonomy/data/article/880882",
+                    "http://dig.isi.edu/autonomy/data/article/648608",
+                    "http://dig.isi.edu/autonomy/data/article/1636214",
+                    "http://dig.isi.edu/autonomy/data/article/590607",
+                    "http://dig.isi.edu/autonomy/data/article/880907",
+                    "http://dig.isi.edu/autonomy/data/article/880905",
+                    "http://dig.isi.edu/autonomy/data/article/1640261",
+                    "http://dig.isi.edu/autonomy/data/article/880900",
+                    "http://dig.isi.edu/autonomy/data/article/5207370",
+                    "http://dig.isi.edu/autonomy/data/article/4577845",
+                    "http://dig.isi.edu/autonomy/data/article/1452012",
+                    "http://dig.isi.edu/autonomy/data/article/1452013",
+                    "http://dig.isi.edu/autonomy/data/article/5207375",
+                    "http://dig.isi.edu/autonomy/data/article/5741376",
+                    "http://dig.isi.edu/autonomy/data/article/1452017",
+                    "http://dig.isi.edu/autonomy/data/article/880897",
+                    "http://dig.isi.edu/autonomy/data/article/880896",
+                    "http://dig.isi.edu/autonomy/data/article/5741381",
+                    "http://dig.isi.edu/autonomy/data/article/5741380",
+                    "http://dig.isi.edu/autonomy/data/article/880891",
+                    "http://dig.isi.edu/autonomy/data/article/4279060",
+                    "http://dig.isi.edu/autonomy/data/article/1461201",
+                    "http://dig.isi.edu/autonomy/data/article/5741294",
+                    "http://dig.isi.edu/autonomy/data/article/1316618",
+                    "http://dig.isi.edu/autonomy/data/article/590636",
+                    "http://dig.isi.edu/autonomy/data/article/6019954",
+                    "http://dig.isi.edu/autonomy/data/article/5235023",
+                    "http://dig.isi.edu/autonomy/data/article/5741388",
+                    "http://dig.isi.edu/autonomy/data/article/398999",
+                    "http://dig.isi.edu/autonomy/data/article/5207385",
+                    "http://dig.isi.edu/autonomy/data/article/4913324",
+                    "http://dig.isi.edu/autonomy/data/article/1611731",
+                    "http://dig.isi.edu/autonomy/data/article/399001",
+                    "http://dig.isi.edu/autonomy/data/article/1609889",
+                    "http://dig.isi.edu/autonomy/data/article/4144667",
+                    "http://dig.isi.edu/autonomy/data/article/1241211",
+                    "http://dig.isi.edu/autonomy/data/article/4708898",
+                    "http://dig.isi.edu/autonomy/data/article/590628",
+                    "http://dig.isi.edu/autonomy/data/article/5741287",
+                    "http://dig.isi.edu/autonomy/data/article/4667150",
+                    "http://dig.isi.edu/autonomy/data/article/4144700",
+                    "http://dig.isi.edu/autonomy/data/article/5138249",
+                    "http://dig.isi.edu/autonomy/data/article/969638",
+                    "http://dig.isi.edu/autonomy/data/article/1452038",
+                    "http://dig.isi.edu/autonomy/data/article/1452036",
+                    "http://dig.isi.edu/autonomy/data/article/1452037",
+                    "http://dig.isi.edu/autonomy/data/article/590651",
+                    "http://dig.isi.edu/autonomy/data/article/1281732",
+                    "http://dig.isi.edu/autonomy/data/article/5741317",
+                    "http://dig.isi.edu/autonomy/data/article/716718",
+                    "http://dig.isi.edu/autonomy/data/article/823164",
+                    "http://dig.isi.edu/autonomy/data/article/838472",
+                    "http://dig.isi.edu/autonomy/data/article/1316630",
+                    "http://dig.isi.edu/autonomy/data/article/4625589",
+                    "http://dig.isi.edu/autonomy/data/article/5207346",
+                    "http://dig.isi.edu/autonomy/data/article/1193949",
+                    "http://dig.isi.edu/autonomy/data/article/809492",
+                    "http://dig.isi.edu/autonomy/data/article/1452151",
+                    "http://dig.isi.edu/autonomy/data/article/1452150",
+                    "http://dig.isi.edu/autonomy/data/article/1452148",
+                    "http://dig.isi.edu/autonomy/data/article/1452144",
+                    "http://dig.isi.edu/autonomy/data/article/1452147",
+                    "http://dig.isi.edu/autonomy/data/article/966822",
+                    "http://dig.isi.edu/autonomy/data/article/1662535",
+                    "http://dig.isi.edu/autonomy/data/article/666794",
+                    "http://dig.isi.edu/autonomy/data/article/1452058",
+                    "http://dig.isi.edu/autonomy/data/article/1173103",
+                    "http://dig.isi.edu/autonomy/data/article/1691131",
+                    "http://dig.isi.edu/autonomy/data/article/398988",
+                    "http://dig.isi.edu/autonomy/data/article/6258185",
+                    "http://dig.isi.edu/autonomy/data/article/842326",
+                    "http://dig.isi.edu/autonomy/data/article/5667179",
+                    "http://dig.isi.edu/autonomy/data/article/1297271",
+                    "http://dig.isi.edu/autonomy/data/article/4654097",
+                    "http://dig.isi.edu/autonomy/data/article/1691138",
+                    "http://dig.isi.edu/autonomy/data/article/1021741",
+                    "http://dig.isi.edu/autonomy/data/article/398981",
+                    "http://dig.isi.edu/autonomy/data/article/4144672",
+                    "http://dig.isi.edu/autonomy/data/article/4144675",
+                    "http://dig.isi.edu/autonomy/data/article/4144673",
+                    "http://dig.isi.edu/autonomy/data/article/1245345",
+                    "http://dig.isi.edu/autonomy/data/article/4144674",
+                    "http://dig.isi.edu/autonomy/data/article/917396",
+                    "http://dig.isi.edu/autonomy/data/article/624965",
+                    "http://dig.isi.edu/autonomy/data/article/1193950",
+                    "http://dig.isi.edu/autonomy/data/article/4144678",
+                    "http://dig.isi.edu/autonomy/data/article/6063056",
+                    "http://dig.isi.edu/autonomy/data/article/1193955",
+                    "http://dig.isi.edu/autonomy/data/article/4732590",
+                    "http://dig.isi.edu/autonomy/data/article/4683118",
+                    "http://dig.isi.edu/autonomy/data/article/5207329",
+                    "http://dig.isi.edu/autonomy/data/article/398955",
+                    "http://dig.isi.edu/autonomy/data/article/5207327",
+                    "http://dig.isi.edu/autonomy/data/article/1452067",
+                    "http://dig.isi.edu/autonomy/data/article/4030868",
+                    "http://dig.isi.edu/autonomy/data/article/1284104",
+                    "http://dig.isi.edu/autonomy/data/article/1284103",
+                    "http://dig.isi.edu/autonomy/data/article/398953",
+                    "http://dig.isi.edu/autonomy/data/article/1245355",
+                    "http://dig.isi.edu/autonomy/data/article/838428",
+                    "http://dig.isi.edu/autonomy/data/article/1194650",
+                    "http://dig.isi.edu/autonomy/data/article/1452077",
+                    "http://dig.isi.edu/autonomy/data/article/1194641",
+                    "http://dig.isi.edu/autonomy/data/article/1452079",
+                    "http://dig.isi.edu/autonomy/data/article/1045056",
+                    "http://dig.isi.edu/autonomy/data/article/1452078",
+                    "http://dig.isi.edu/autonomy/data/article/398961",
+                    "http://dig.isi.edu/autonomy/data/article/1204288",
+                    "http://dig.isi.edu/autonomy/data/article/4153035",
+                    "http://dig.isi.edu/autonomy/data/article/6754600",
+                    "http://dig.isi.edu/autonomy/data/article/1203523",
+                    "http://dig.isi.edu/autonomy/data/article/1238084",
+                    "http://dig.isi.edu/autonomy/data/article/838432",
+                    "http://dig.isi.edu/autonomy/data/article/5207320",
+                    "http://dig.isi.edu/autonomy/data/article/1492920",
+                    "http://dig.isi.edu/autonomy/data/article/1607325",
+                    "http://dig.isi.edu/autonomy/data/article/5207322"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/262725"
+            }
+        ],
+        "datePublished": "2002",
+        "keywords": [
+            "replicated databases",
+            "heterogeneous preferences",
+            "autonomous decentralized database system",
+            "Production systems",
+            "mobile agents",
+            "supply chain management",
+            "Business communication",
+            "reliability",
+            "supply chain management system",
+            "distributed database systems",
+            "Management information systems",
+            "Cultural differences",
+            "Computer science",
+            "mobile agent",
+            "Companies",
+            "data field",
+            "Supply chain management",
+            "data integrity",
+            "Logistics",
+            "replicated sites",
+            "Database systems",
+            "autonomous consistency coordination technique",
+            "Mobile agents"
+        ],
+        "name": "Autonomous consistency coordination technique among distributed database systems for achieving high ...",
+        "text": "Recently, market and user preferences have been drastically changing; user oriented production and logistic systems such as the supply chain management system have been required. In this kind of system, different subsystems with heterogeneous level of reliability have to coexist while trying to preserve the one click response and the flexibility in order to satisfy the frequently changing and heterogeneous preferences of the users. Thus assurance is required. An autonomous decentralized database system is proposed in order to realize the assurance. In this architecture, every site can autonomously control its own database within a permissible value, and coordinate among the sites by a mobile agent. Moreover, the autonomous consistency coordination technique is proposed in order to solve the problem of integrating and keeping the consistency of DB systems with heterogeneous levels of reliability. This technique is based on the inherent properties of autonomous decentralized systems (ADS) to attain the on-line property by the use of a data field among the replicated sites. Furthermore, an evaluation of the proposed technique is showed.\nAuthor(s) Leguizamo, C.P. Dept. of Comput. Sci., Tokyo Inst. of Technol., Japan Kato, S. ; Mori, K.\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "tika_location": {
+            "geo_lat": "-7.9377",
+            "geo_lng": "112.0931",
+            "geo_name": "Japan"
+        },
+        "uri": "http://dig.isi.edu/autonomy/data/article/1021741"
+    },
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": "Schulz, D.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/6249513",
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/5424158",
+                    "http://dig.isi.edu/autonomy/data/article/833575",
+                    "http://dig.isi.edu/autonomy/data/article/6849790",
+                    "http://dig.isi.edu/autonomy/data/article/1545038",
+                    "http://dig.isi.edu/autonomy/data/article/6228617",
+                    "http://dig.isi.edu/autonomy/data/article/6523896",
+                    "http://dig.isi.edu/autonomy/data/article/812801",
+                    "http://dig.isi.edu/autonomy/data/article/956082",
+                    "http://dig.isi.edu/autonomy/data/article/932850"
+                ],
+                "name": "D. Schulz",
+                "uri": "http://dig.isi.edu/autonomy/data/author/d.schulz"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Hahnel, D.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1308118",
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/1458329",
+                    "http://dig.isi.edu/autonomy/data/article/1250629",
+                    "http://dig.isi.edu/autonomy/data/article/1241816",
+                    "http://dig.isi.edu/autonomy/data/article/956082",
+                    "http://dig.isi.edu/autonomy/data/article/5152365",
+                    "http://dig.isi.edu/autonomy/data/article/1371614"
+                ],
+                "name": "D. Hahnel",
+                "uri": "http://dig.isi.edu/autonomy/data/author/d.hahnel"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Burgard, W.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/6280121",
+                    "http://dig.isi.edu/autonomy/data/article/6696803",
+                    "http://dig.isi.edu/autonomy/data/article/6385988",
+                    "http://dig.isi.edu/autonomy/data/article/6280102",
+                    "http://dig.isi.edu/autonomy/data/article/6280101",
+                    "http://dig.isi.edu/autonomy/data/article/956082",
+                    "http://dig.isi.edu/autonomy/data/article/1041440",
+                    "http://dig.isi.edu/autonomy/data/article/4651026",
+                    "http://dig.isi.edu/autonomy/data/article/6004839",
+                    "http://dig.isi.edu/autonomy/data/article/6907813",
+                    "http://dig.isi.edu/autonomy/data/article/1014268",
+                    "http://dig.isi.edu/autonomy/data/article/1641950",
+                    "http://dig.isi.edu/autonomy/data/article/1458329",
+                    "http://dig.isi.edu/autonomy/data/article/6630880",
+                    "http://dig.isi.edu/autonomy/data/article/1250629",
+                    "http://dig.isi.edu/autonomy/data/article/5980111",
+                    "http://dig.isi.edu/autonomy/data/article/5649820",
+                    "http://dig.isi.edu/autonomy/data/article/932565",
+                    "http://dig.isi.edu/autonomy/data/article/4399531",
+                    "http://dig.isi.edu/autonomy/data/article/1013387",
+                    "http://dig.isi.edu/autonomy/data/article/932850",
+                    "http://dig.isi.edu/autonomy/data/article/6224920",
+                    "http://dig.isi.edu/autonomy/data/article/6301963",
+                    "http://dig.isi.edu/autonomy/data/article/6280950",
+                    "http://dig.isi.edu/autonomy/data/article/5509950",
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/5354530",
+                    "http://dig.isi.edu/autonomy/data/article/5653949",
+                    "http://dig.isi.edu/autonomy/data/article/4650734",
+                    "http://dig.isi.edu/autonomy/data/article/812801",
+                    "http://dig.isi.edu/autonomy/data/article/5152660",
+                    "http://dig.isi.edu/autonomy/data/article/5152365",
+                    "http://dig.isi.edu/autonomy/data/article/784976",
+                    "http://dig.isi.edu/autonomy/data/article/1371614",
+                    "http://dig.isi.edu/autonomy/data/article/4804362",
+                    "http://dig.isi.edu/autonomy/data/article/6094632",
+                    "http://dig.isi.edu/autonomy/data/article/6280097",
+                    "http://dig.isi.edu/autonomy/data/article/6224640",
+                    "http://dig.isi.edu/autonomy/data/article/833575",
+                    "http://dig.isi.edu/autonomy/data/article/1241816",
+                    "http://dig.isi.edu/autonomy/data/article/6094946",
+                    "http://dig.isi.edu/autonomy/data/article/5152446",
+                    "http://dig.isi.edu/autonomy/data/article/1570411",
+                    "http://dig.isi.edu/autonomy/data/article/6631396",
+                    "http://dig.isi.edu/autonomy/data/article/973389",
+                    "http://dig.isi.edu/autonomy/data/article/727279",
+                    "http://dig.isi.edu/autonomy/data/article/6907682"
+                ],
+                "name": "W. Burgard",
+                "uri": "http://dig.isi.edu/autonomy/data/author/w.burgard"
+            }
+        ],
+        "datePublished": "2002",
+        "isCitationOf": [
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/1461210"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1673213"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1041439",
+                "uri": "http://dig.isi.edu/autonomy/data/article/1249235"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1041439",
+                "uri": "http://dig.isi.edu/autonomy/data/article/6151142"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/30720"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1242260"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/932850"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1389614"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1045636",
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/351183",
+                    "http://dig.isi.edu/autonomy/data/article/1013379"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1389538"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/1389728",
+                    "http://dig.isi.edu/autonomy/data/article/1389733"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/4303564"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/1067990",
+                    "http://dig.isi.edu/autonomy/data/article/893181",
+                    "http://dig.isi.edu/autonomy/data/article/784976",
+                    "http://dig.isi.edu/autonomy/data/article/503576"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1416972"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/1250629"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1389883"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/6203588",
+                    "http://dig.isi.edu/autonomy/data/article/5940510"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/6680774"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1041439",
+                "uri": "http://dig.isi.edu/autonomy/data/article/1308934"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/1641950",
+                    "http://dig.isi.edu/autonomy/data/article/713705",
+                    "http://dig.isi.edu/autonomy/data/article/724883",
+                    "http://dig.isi.edu/autonomy/data/article/956082"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/4745871"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/613851"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1371614"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/4433892"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/6385561"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1250630",
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/1389538"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1544978"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1041439",
+                "uri": "http://dig.isi.edu/autonomy/data/article/1250629"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/1250629",
+                    "http://dig.isi.edu/autonomy/data/article/833573"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1458329"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1389947",
+                    "http://dig.isi.edu/autonomy/data/article/1041439"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1641765"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1041439",
+                "uri": "http://dig.isi.edu/autonomy/data/article/6409769"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/507414"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/5749694"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/20439"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/6732093"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/407463",
+                    "http://dig.isi.edu/autonomy/data/article/584097",
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/1041446",
+                    "http://dig.isi.edu/autonomy/data/article/933093"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1250673"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/5509725"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/5876943"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": "http://dig.isi.edu/autonomy/data/article/1041439",
+                "uri": "http://dig.isi.edu/autonomy/data/article/1308857"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "citation": [
+                    "http://dig.isi.edu/autonomy/data/article/1041439",
+                    "http://dig.isi.edu/autonomy/data/article/932850"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/1250642"
+            }
+        ],
+        "keywords": [
+            "Robot sensing systems",
+            "map building",
+            "Data mining",
+            "map generation",
+            "static environment",
+            "data acquisition",
+            "mobile robots",
+            "Simultaneous localization and mapping",
+            "Path planning",
+            "indoor scenarios",
+            "Robustness",
+            "corrupted readings",
+            "Computer science",
+            "populated environments",
+            "Mobile robots",
+            "Dynamic range",
+            "Working environment noise",
+            "spurious objects",
+            "probability",
+            "multiple person tracking",
+            "System testing",
+            "data-acquisition phase",
+            "outdoor scenarios"
+        ],
+        "name": "Map building with mobile robots in populated environments",
+        "text": "The problem of generating maps with mobile robots has received considerable attention over the past years. However, most of the approaches assume that the environment is static during the data-acquisition phase. In this paper we consider the problem of creating maps with mobile robots in populated environments. Our approach uses a probabilistic method to track multiple people and to incorporate the results of the tracking technique into the mapping process. The resulting maps are more accurate since corrupted readings are treated accordingly during the matching phase and since the number of spurious objects in the resulting maps is reduced. Our approach has been implemented and tested on real robot systems in indoor and outdoor scenarios. We present several experiments illustrating the capabilities of our approach to generate accurate 2D and 3D maps.\nAuthor(s) Hahnel, D. Dept. of Comput. Sci., Freiburg Univ., Germany Schulz, D. ; Burgard, W.\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "tika_location": {
+            "geo_lat": "52.3471",
+            "geo_lng": "24.3085",
+            "geo_name": "Germany"
+        },
+        "uri": "http://dig.isi.edu/autonomy/data/article/1041439"
+    },
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": [
+                    "Jae Heon Kim",
+                    "Kim, J.H.",
+                    "Jin Hyo Kim",
+                    "Jae Hwan Kim",
+                    "Jung Ha Kim",
+                    "Jong Hyun Kim"
+                ],
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/481346",
+                    "http://dig.isi.edu/autonomy/data/article/637644",
+                    "http://dig.isi.edu/autonomy/data/article/6728270",
+                    "http://dig.isi.edu/autonomy/data/article/1043896",
+                    "http://dig.isi.edu/autonomy/data/article/572785",
+                    "http://dig.isi.edu/autonomy/data/article/570696",
+                    "http://dig.isi.edu/autonomy/data/article/7057442",
+                    "http://dig.isi.edu/autonomy/data/article/6908632",
+                    "http://dig.isi.edu/autonomy/data/article/7057441",
+                    "http://dig.isi.edu/autonomy/data/article/6704139",
+                    "http://dig.isi.edu/autonomy/data/article/6629659",
+                    "http://dig.isi.edu/autonomy/data/article/4108181",
+                    "http://dig.isi.edu/autonomy/data/article/613855"
+                ],
+                "name": "J. H. Kim",
+                "uri": "http://dig.isi.edu/autonomy/data/author/j.h.kim"
+            },
+            {
+                "a": "Person",
+                "alternateName": [
+                    "Dae Hyuk Kim",
+                    "Do Hyung Kim",
+                    "Dong Han Kim",
+                    "Dong Hun Kim",
+                    "Dong Hwan Kim",
+                    "Doo Hyung Kim",
+                    "Dae Ho Kim",
+                    "Doo Hwan Kim",
+                    "Dae Hwan Kim",
+                    "Kim, D.H."
+                ],
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1428623",
+                    "http://dig.isi.edu/autonomy/data/article/5670290",
+                    "http://dig.isi.edu/autonomy/data/article/7108257",
+                    "http://dig.isi.edu/autonomy/data/article/932983",
+                    "http://dig.isi.edu/autonomy/data/article/4406784",
+                    "http://dig.isi.edu/autonomy/data/article/7057485",
+                    "http://dig.isi.edu/autonomy/data/article/1043896",
+                    "http://dig.isi.edu/autonomy/data/article/6968519",
+                    "http://dig.isi.edu/autonomy/data/article/6145963",
+                    "http://dig.isi.edu/autonomy/data/article/1521875",
+                    "http://dig.isi.edu/autonomy/data/article/6579496",
+                    "http://dig.isi.edu/autonomy/data/article/6144854",
+                    "http://dig.isi.edu/autonomy/data/article/6704090",
+                    "http://dig.isi.edu/autonomy/data/article/6987984",
+                    "http://dig.isi.edu/autonomy/data/article/4406635",
+                    "http://dig.isi.edu/autonomy/data/article/6695642",
+                    "http://dig.isi.edu/autonomy/data/article/4108264",
+                    "http://dig.isi.edu/autonomy/data/article/6462951",
+                    "http://dig.isi.edu/autonomy/data/article/390488",
+                    "http://dig.isi.edu/autonomy/data/article/6695678"
+                ],
+                "name": "D. H. Kim",
+                "uri": "http://dig.isi.edu/autonomy/data/author/d.h.kim"
+            },
+            {
+                "a": "Person",
+                "alternateName": [
+                    "Chung, M.J.",
+                    "Myung Jin Chung"
+                ],
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/6463065",
+                    "http://dig.isi.edu/autonomy/data/article/6463062",
+                    "http://dig.isi.edu/autonomy/data/article/6146006",
+                    "http://dig.isi.edu/autonomy/data/article/1087204",
+                    "http://dig.isi.edu/autonomy/data/article/5420565",
+                    "http://dig.isi.edu/autonomy/data/article/4303880",
+                    "http://dig.isi.edu/autonomy/data/article/6146004",
+                    "http://dig.isi.edu/autonomy/data/article/5420588",
+                    "http://dig.isi.edu/autonomy/data/article/506961",
+                    "http://dig.isi.edu/autonomy/data/article/6427293",
+                    "http://dig.isi.edu/autonomy/data/article/5679627",
+                    "http://dig.isi.edu/autonomy/data/article/5598652",
+                    "http://dig.isi.edu/autonomy/data/article/174529",
+                    "http://dig.isi.edu/autonomy/data/article/4339538",
+                    "http://dig.isi.edu/autonomy/data/article/6462926",
+                    "http://dig.isi.edu/autonomy/data/article/976282",
+                    "http://dig.isi.edu/autonomy/data/article/499833",
+                    "http://dig.isi.edu/autonomy/data/article/4108740",
+                    "http://dig.isi.edu/autonomy/data/article/6100822",
+                    "http://dig.isi.edu/autonomy/data/article/6483559",
+                    "http://dig.isi.edu/autonomy/data/article/1043896",
+                    "http://dig.isi.edu/autonomy/data/article/4694434",
+                    "http://dig.isi.edu/autonomy/data/article/4735729",
+                    "http://dig.isi.edu/autonomy/data/article/604116",
+                    "http://dig.isi.edu/autonomy/data/article/345951",
+                    "http://dig.isi.edu/autonomy/data/article/4600669",
+                    "http://dig.isi.edu/autonomy/data/article/593694",
+                    "http://dig.isi.edu/autonomy/data/article/6677364",
+                    "http://dig.isi.edu/autonomy/data/article/4415108",
+                    "http://dig.isi.edu/autonomy/data/article/4415158"
+                ],
+                "name": "M. J. Chung",
+                "uri": "http://dig.isi.edu/autonomy/data/author/m.j.chung"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Dong Hyun Yoo",
+                "isAuthorOf": "http://dig.isi.edu/autonomy/data/article/1043896",
+                "name": "D. H. Yoo",
+                "uri": "http://dig.isi.edu/autonomy/data/author/d.h.yoo"
+            }
+        ],
+        "citation": [
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1043896",
+                    "http://dig.isi.edu/autonomy/data/article/825369"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/370199"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": "http://dig.isi.edu/autonomy/data/article/1043896",
+                "uri": "http://dig.isi.edu/autonomy/data/article/748170"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": "http://dig.isi.edu/autonomy/data/article/1043896",
+                "uri": "http://dig.isi.edu/autonomy/data/article/744648"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1573594",
+                    "http://dig.isi.edu/autonomy/data/article/1043896",
+                    "http://dig.isi.edu/autonomy/data/article/4108150",
+                    "http://dig.isi.edu/autonomy/data/article/981944"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/825369"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1043896",
+                    "http://dig.isi.edu/autonomy/data/article/825369"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/216730"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": "http://dig.isi.edu/autonomy/data/article/1043896",
+                "uri": "http://dig.isi.edu/autonomy/data/article/805722"
+            }
+        ],
+        "datePublished": "2002",
+        "keywords": [
+            "Light emitting diodes",
+            "Charge coupled devices",
+            "Skin",
+            "Robot vision systems",
+            "Lenses",
+            "Charge-coupled image sensors",
+            "Cameras",
+            "Optical reflection",
+            "Monitoring",
+            "Keyboards"
+        ],
+        "name": "A human-robot interface using vision-based eye gaze estimation system",
+        "text": "First Page of the Article\nAuthor(s) Dong Hyun Yoo EECS Jae Heon Kim ; Do Hyung Kim ; Myung Jin Chung\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "uri": "http://dig.isi.edu/autonomy/data/article/1043896"
+    },
+    {
+        "@context": "file:/Users/rajagopal/Desktop/dig-alignment/versions/2.0/karma/context.json",
+        "a": "ScholarlyArticle",
+        "author": [
+            {
+                "a": "Person",
+                "alternateName": "Chevaleyre, Y.",
+                "isAuthorOf": "http://dig.isi.edu/autonomy/data/article/1048411",
+                "name": "Y. Chevaleyre",
+                "uri": "http://dig.isi.edu/autonomy/data/author/y.chevaleyre"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Bredeche, N.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/4142112",
+                    "http://dig.isi.edu/autonomy/data/article/4522160",
+                    "http://dig.isi.edu/autonomy/data/article/1048411",
+                    "http://dig.isi.edu/autonomy/data/article/1624543"
+                ],
+                "name": "N. Bredeche",
+                "uri": "http://dig.isi.edu/autonomy/data/author/n.bredeche"
+            },
+            {
+                "a": "Person",
+                "alternateName": "Hugues, L.",
+                "isAuthorOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1048411",
+                    "http://dig.isi.edu/autonomy/data/article/1041506"
+                ],
+                "name": "L. Hugues",
+                "uri": "http://dig.isi.edu/autonomy/data/author/l.hugues"
+            }
+        ],
+        "citation": [
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": "http://dig.isi.edu/autonomy/data/article/1048411",
+                "uri": "http://dig.isi.edu/autonomy/data/article/609412"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": "http://dig.isi.edu/autonomy/data/article/1048411",
+                "uri": "http://dig.isi.edu/autonomy/data/article/5727575"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": [
+                    "http://dig.isi.edu/autonomy/data/article/1048411",
+                    "http://dig.isi.edu/autonomy/data/article/1416976"
+                ],
+                "uri": "http://dig.isi.edu/autonomy/data/article/609453"
+            },
+            {
+                "a": "ScholarlyArticle",
+                "isCitationOf": "http://dig.isi.edu/autonomy/data/article/1048411",
+                "uri": "http://dig.isi.edu/autonomy/data/article/905645"
+            }
+        ],
+        "datePublished": "2002",
+        "keywords": [
+            "Image retrieval",
+            "image matching",
+            "Learning systems",
+            "Humans",
+            "mobile robots",
+            "goal-oriented approach",
+            "perceptual system",
+            "Target tracking",
+            "Object detection",
+            "Target recognition",
+            "Pixel",
+            "robot vision",
+            "Mobile robots",
+            "Layout",
+            "wrapper",
+            "object detection",
+            "image retrieval",
+            "Mobile communication",
+            "autonomous mobile robot",
+            "image descriptors",
+            "perceptual learning approach",
+            "image classification"
+        ],
+        "name": "Wrapper for object detection in an autonomous mobile robot",
+        "text": "In this paper, we address the problem of object detection in an autonomous mobile robot. The goal is to define a perceptual system that can quickly adapt itself to detect a specific object. To achieve this, we propose a goal-oriented approach to let the robot build the most fitted image descriptors for a given object.\nAuthor(s) Bredeche, N. LIMSI, Paris XI Univ., France Chevaleyre, Y. ; Hugues, L.\nReferenced Items are not available for this document.\nNo versions found for this document.\nStandards Dictionary Terms are available to subscribers only.",
+        "uri": "http://dig.isi.edu/autonomy/data/article/1048411"
+    }
+]
