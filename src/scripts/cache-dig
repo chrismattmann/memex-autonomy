@@ -1,0 +1,34 @@
+#/bin/bash 
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+# 
+#     http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# 
+
+# run this script from a named directory of the DIG index to cache
+export INDEX=`basename $PWD`
+
+# export DIG into autonomy.json file
+es-export-bulk --url  $DIG_URL --file ./data.json --index $INDEX
+
+# download JSON mappings for ElasticSearch creation schema
+curl -k "$DIG_URL/$INDEX/_mappings" -o esMapping-dig.json
+
+# remove the old index
+curl -XDELETE "http://localhost:9200/$INDEX/"
+
+# create new index from DIG using JSON mappings for fields.
+curl -XPUT "http://localhost:9200/$INDEX/" -d "`extract-mappings.py`"
+
+# import DIG into ElasticSearch dig-mrs-dev16 index cache on MEMEX MRS machine.
+es-import-bulk --url http://localhost:9200/ --file ./data.json --max 1000
