@@ -15,11 +15,30 @@
 # limitations under the License.
 # 
 
+import json
+import os
+import sys
+import getopt
 from tika.tika import callServer
 from tika.tika import ServerEndpoint
-import json
 from elasticsearch import Elasticsearch
 from elasticsearch import helpers
+
+_verbose = False
+_helpMessage = '''
+
+Usage: geotopic_dig.py [-i <index name>] [-o <output dir>] [-s <search index name>]
+
+Operation:
+-s --search
+    The Elasticsearch index to search, e.g., dig-autonomy-18.
+-i --index
+    The Elasticsearch index, e.g., dig-autonomy-18-geo, to index to.
+-o --outdir
+    Skip indexing to Elasticsearch and just write the JSON docs in this directory to index later.
+-v
+    Work verbosely.
+'''
 
 def tikaGeoExtract(esHit):
     if not "text" in esHit['_source']: return None
@@ -61,28 +80,93 @@ def addTikaGeo(tJson, nJson):
         nJson["tika_location"] = tikaGeo
         
             
+def geoIndex(search, index, outDir):
+    es = Elasticsearch()
+    if not os.path.exists(outDir):
+        verboseLog("Creating ["+outDir+"] since it doesn't exist.")
+        os.makedirs(outDir)
 
-es = Elasticsearch()
-query = {"query": {"match": {'_type':'article'}}}
-res = helpers.scan(client= es, query=query, scroll= "10m", index="dig-autonomy-18", doc_type="article", timeout="10m")
-docs = []
-count = 0
-tikaGeoCount = 0
+    query = {"query": {"match": {'_type':'article'}}}
+    res = helpers.scan(client= es, query=query, scroll= "10m", index=search, doc_type="article", timeout="10m")
+    docs = []
+    count = 0
+    tikaGeoCount = 0
 
-for hit in res:
-    tikaJson = tikaGeoExtract(hit)
-    newDoc = hit['_source']
-    addTikaGeo(tikaJson, newDoc)
-    hasTikaGeo = "no"
-    if "tika_location" in newDoc:
-        hasTikaGeo = "yes"
-        tikaGeoCount = tikaGeoCount + 1
+    for hit in res:
+        tikaJson = tikaGeoExtract(hit)
+        newDoc = hit['_source']
+        addTikaGeo(tikaJson, newDoc)
+        hasTikaGeo = "no"
+        if "tika_location" in newDoc:
+            hasTikaGeo = "yes"
+            tikaGeoCount = tikaGeoCount + 1
 
-    es.index(index='dig-autonomy-18-geo', doc_type='article', body=newDoc)
-    count = count + 1
-    print "Indexing "+newDoc["uri"]+" Tika Geo: ["+hasTikaGeo+"]: Total Docs Indexed: ["+str(count)+"]"
+        count = count + 1
+        if index != None:
+            es.index(index=index, doc_type='article', body=newDoc)
+            print "Indexing "+newDoc["uri"]+" Tika Geo: ["+hasTikaGeo+"]: Total Docs Indexed: ["+str(count)+"]"
 
+        if outDir != None:
+            filePath = outDir + str(count)+".json"
+            with open(filePath, "w") as outFile:
+                outFile.write(json.dumps(newDoc))
+            print "Writing ["+filePath+"] Tika Geo: ["+hasTikaGeo+"]: Total Docs Written: ["+str(count)+"]"
+        
+    if index != None:
+        es.indices.refresh(index=index)
 
-es.indices.refresh(index='dig-autonomy-18-geo')
-print "Total Docs Indexed: ["+str(count)+"]"
-print "Total Docs with Tika Geo: ["+str(tikaGeoCount)+"]"
+    print "Total Docs Indexed: ["+str(count)+"]"
+    print "Total Docs with Tika Geo: ["+str(tikaGeoCount)+"]"
+
+def verboseLog(message):
+    if _verbose:
+        print >>sys.stderr, message
+
+class _Usage(Exception):
+    '''An error for problems with arguments on the command line.'''
+    def __init__(self, msg):
+        self.msg = msg
+
+def main(argv=None):
+   if argv is None:
+     argv = sys.argv
+
+   try:
+       try:
+          opts, args = getopt.getopt(argv[1:],'hvs:i:o:',['help', 'verbose', 'search=', 'index=', 'outdir='])
+       except getopt.error, msg:
+         raise _Usage(msg)    
+     
+       if len(opts) == 0:
+           raise _Usage(_helpMessage)
+
+       index=None
+       search=None
+       outDir=None
+       
+       for option, value in opts:           
+          if option in ('-h', '--help'):
+             raise _Usage(_helpMessage)
+          elif option in ('-v', '--verbose'):
+             global _verbose
+             _verbose = True
+          elif option in ('-i', '--index'):
+              index = value
+          elif option in ('-s', '--search'):
+              search = value
+          elif option in ('-o', '--outdir'):
+              outDir = value
+              if outDir[len(outDir)-1] != "/":
+                  outDir += "/"
+
+       if search == None or (index == None and outDir == None) or (index != None and outDir != None):
+           raise _Usage(_helpMessage)
+
+       geoIndex(search, index, outDir)
+
+   except _Usage, err:
+       print >>sys.stderr, sys.argv[0].split('/')[-1] + ': ' + str(err.msg)
+       return 2
+
+if __name__ == "__main__":
+   sys.exit(main())
