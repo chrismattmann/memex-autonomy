@@ -27,22 +27,27 @@ from elasticsearch import helpers
 _verbose = False
 _helpMessage = '''
 
-Usage: geotopic_dig.py [-i <index name>] [-o <output dir>] [-s <search index name>]
+Usage: geotopic_dig.py [-e <elastic search url>] [-i <index name>] [-o <output dir>] [-s <search index name>] [-g <geo field name>]
 
 Operation:
+
+-e --esUrl
+    The URL to the Elasticsearch server to contact. Defaults to http://localhost:9200.
 -s --search
     The Elasticsearch index to search, e.g., dig-autonomy-18.
 -i --index
     The Elasticsearch index, e.g., dig-autonomy-18-geo, to index to.
 -o --outdir
     Skip indexing to Elasticsearch and just write the JSON docs in this directory to index later.
--v
+-g --geoField
+    The name of the geoField from the ES documents to use as input to Tika's GeoTopicParser. Defaults to 'text'.
+-v --verbose
     Work verbosely.
 '''
 
-def tikaGeoExtract(esHit):
-    if not "text" in esHit['_source']: return None
-    res = callServer('put', ServerEndpoint, '/rmeta', esHit['_source']['text'], {'Accept' : 'application/json', 'Content-Type' : 'application/geotopic'}, False)
+def tikaGeoExtract(esHit, geoField):
+    if not geoField in esHit['_source']: return None
+    res = callServer('put', ServerEndpoint, '/rmeta', esHit['_source'][geoField], {'Accept' : 'application/json', 'Content-Type' : 'application/geotopic'}, False)
     if res[0] != 200:
         return None
     jsonParse = json.loads(res[1])
@@ -80,8 +85,9 @@ def addTikaGeo(tJson, nJson):
         nJson["tika_location"] = tikaGeo
         
             
-def geoIndex(search, index, outDir):
-    es = Elasticsearch()
+def geoIndex(search, index, outDir, esUrl="http://localhost:9200", geoField="text"):
+    verboseLog("Connecting to Elasticsearch: ["+esUrl+"]: geoField: ["+geoField+"]")
+    es = Elasticsearch([esUrl])
     if not os.path.exists(outDir):
         verboseLog("Creating ["+outDir+"] since it doesn't exist.")
         os.makedirs(outDir)
@@ -93,7 +99,7 @@ def geoIndex(search, index, outDir):
     tikaGeoCount = 0
 
     for hit in res:
-        tikaJson = tikaGeoExtract(hit)
+        tikaJson = tikaGeoExtract(hit, geoField)
         newDoc = hit['_source']
         addTikaGeo(tikaJson, newDoc)
         hasTikaGeo = "no"
@@ -133,7 +139,7 @@ def main(argv=None):
 
    try:
        try:
-          opts, args = getopt.getopt(argv[1:],'hvs:i:o:',['help', 'verbose', 'search=', 'index=', 'outdir='])
+          opts, args = getopt.getopt(argv[1:],'hve:s:i:o:g:',['help', 'verbose', 'esUrl=', 'search=', 'index=', 'outdir=', 'geoField='])
        except getopt.error, msg:
          raise _Usage(msg)    
      
@@ -143,6 +149,8 @@ def main(argv=None):
        index=None
        search=None
        outDir=None
+       esUrl=None
+       geoField=None
        
        for option, value in opts:           
           if option in ('-h', '--help'):
@@ -158,11 +166,15 @@ def main(argv=None):
               outDir = value
               if outDir[len(outDir)-1] != "/":
                   outDir += "/"
+          elif option in ('-e', '--esUrl'):
+              esUrl = value
+          elif option in ('-g', '--geoField'):
+              geoField = value
 
        if search == None or (index == None and outDir == None) or (index != None and outDir != None):
            raise _Usage(_helpMessage)
 
-       geoIndex(search, index, outDir)
+       geoIndex(search, index, outDir, esUrl, geoField)
 
    except _Usage, err:
        print >>sys.stderr, sys.argv[0].split('/')[-1] + ': ' + str(err.msg)
