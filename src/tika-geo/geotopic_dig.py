@@ -78,7 +78,7 @@ for hit in res:
         hasTikaGeo = "yes"
         tikaGeoCount = tikaGeoCount + 1
 
-        es.index(index='dig-autonomy-18-geo', doc_type='article', body=newDoc)
+    es.index(index='dig-autonomy-18-geo', doc_type='article', body=newDoc)
     count = count + 1
     print "Indexing "+newDoc["uri"]+" Tika Geo: ["+hasTikaGeo+"]: Total Docs Indexed: ["+str(count)+"]"
 
