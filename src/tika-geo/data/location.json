@@ -1,0 +1,9 @@
+{
+ "query" : {
+    "constant_score" : {
+        "filter" : {
+            "exists" : { "field" : "tika_location" }
+        }
+    }
+}
+}
