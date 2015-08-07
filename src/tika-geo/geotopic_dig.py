@@ -41,13 +41,32 @@ Operation:
     Skip indexing to Elasticsearch and just write the JSON docs in this directory to index later.
 -g --geoField
     The name of the geoField from the ES documents to use as input to Tika's GeoTopicParser. Defaults to 'text'.
+-m --match
+    The match query to use (if Elasticsearch) to select documents.
 -v --verbose
     Work verbosely.
 '''
 
+def getGeoField(field, doc):
+    if "." in field:
+        toks = field.rsplit('.')
+        dict = doc
+        for t in toks:
+            if not t in dict:
+                return None
+            dict = dict[t]
+        return dict
+    else:
+        if not field in doc:
+            return None
+        else:
+            return doc[field]
+            
+
 def tikaGeoExtract(esHit, geoField):
-    if not geoField in esHit['_source']: return None
-    res = callServer('put', ServerEndpoint, '/rmeta', esHit['_source'][geoField], {'Accept' : 'application/json', 'Content-Type' : 'application/geotopic'}, False)
+    text = getGeoField(geoField, esHit['_source'])
+    if text == None: return None
+    res = callServer('put', ServerEndpoint, '/rmeta', text, {'Accept' : 'application/json', 'Content-Type' : 'application/geotopic'}, False)
     if res[0] != 200:
         return None
     jsonParse = json.loads(res[1])
@@ -85,15 +104,15 @@ def addTikaGeo(tJson, nJson):
         nJson["tika_location"] = tikaGeo
         
             
-def geoIndex(search, index, outDir, esUrl="http://localhost:9200", geoField="text"):
-    verboseLog("Connecting to Elasticsearch: ["+esUrl+"]: geoField: ["+geoField+"]")
+def geoIndex(search, index, outDir, esUrl, geoField, match):
+    verboseLog("Connecting to Elasticsearch: ["+esUrl+"]: geoField: ["+geoField+"]: search index: ["+search+"]: match: ["+match+"]")
     es = Elasticsearch([esUrl])
     if not os.path.exists(outDir):
         verboseLog("Creating ["+outDir+"] since it doesn't exist.")
         os.makedirs(outDir)
 
-    query = {"query": {"match": {'_type':'article'}}}
-    res = helpers.scan(client= es, query=query, scroll= "10m", index=search, doc_type="article", timeout="10m")
+    query = {"query": {"match": eval(match)}}
+    res = helpers.scan(client= es, query=query, scroll= "120m", index=search, raise_on_error=False, timeout="120m")
     docs = []
     count = 0
     tikaGeoCount = 0
@@ -139,7 +158,7 @@ def main(argv=None):
 
    try:
        try:
-          opts, args = getopt.getopt(argv[1:],'hve:s:i:o:g:',['help', 'verbose', 'esUrl=', 'search=', 'index=', 'outdir=', 'geoField='])
+          opts, args = getopt.getopt(argv[1:],'hve:s:i:o:g:m:',['help', 'verbose', 'esUrl=', 'search=', 'index=', 'outdir=', 'geoField=', 'match='])
        except getopt.error, msg:
          raise _Usage(msg)    
      
@@ -151,6 +170,7 @@ def main(argv=None):
        outDir=None
        esUrl=None
        geoField=None
+       match=None
        
        for option, value in opts:           
           if option in ('-h', '--help'):
@@ -170,11 +190,22 @@ def main(argv=None):
               esUrl = value
           elif option in ('-g', '--geoField'):
               geoField = value
+          elif option in ('-m', '--match'):
+              match = value
 
        if search == None or (index == None and outDir == None) or (index != None and outDir != None):
            raise _Usage(_helpMessage)
 
-       geoIndex(search, index, outDir, esUrl, geoField)
+       if esUrl == None:
+           esUrl = "http://localhost:9200"
+       
+       if geoField == None:
+           geoField = "text"
+
+       if match == None:
+           match = "{ '_type' : 'article' }"
+
+       geoIndex(search, index, outDir, esUrl, geoField, match)
 
    except _Usage, err:
        print >>sys.stderr, sys.argv[0].split('/')[-1] + ': ' + str(err.msg)
