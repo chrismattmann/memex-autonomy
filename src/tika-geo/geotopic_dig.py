@@ -19,6 +19,7 @@ import json
 import os
 import sys
 import getopt
+import glob
 from tika.tika import callServer
 from tika.tika import ServerEndpoint
 from elasticsearch import Elasticsearch
@@ -27,7 +28,7 @@ from elasticsearch import helpers
 _verbose = False
 _helpMessage = '''
 
-Usage: geotopic_dig.py [-e <elastic search url>] [-i <index name>] [-o <output dir>] [-s <search index name>] [-g <geo field name>]
+Usage: geotopic_dig.py [-e <elastic search url>] [-i <index name>] [-o <output dir>] [-s <search index name>] [-g <geo field name>] [-m <match query JSON>] [-d <id field>]
 
 Operation:
 
@@ -43,11 +44,27 @@ Operation:
     The name of the geoField from the ES documents to use as input to Tika's GeoTopicParser. Defaults to 'text'.
 -m --match
     The match query to use (if Elasticsearch) to select documents.
+-d --idField
+    The JSON document field to use to determine whether this document has been already indexed and/or written to outdir.
 -v --verbose
     Work verbosely.
 '''
 
-def getGeoField(field, doc):
+def readIds(identifier, outDir):
+    verboseLog("Reading IDs from ["+outDir+"*.json]")
+    ids = {}
+    jsonFiles = glob.glob(outDir + "*.json")
+    for f in jsonFiles:
+        with open(f, 'r') as fd:
+            doc = json.load(fd)
+            val = getField(identifier, doc)
+            if val != None:
+                verboseLog("Adding id: ["+val+"]")
+                ids[val] = True
+
+    return ids
+
+def getField(field, doc):
     if "." in field:
         toks = field.rsplit('.')
         dict = doc
@@ -64,7 +81,7 @@ def getGeoField(field, doc):
             
 
 def tikaGeoExtract(esHit, geoField):
-    text = getGeoField(geoField, esHit['_source'])
+    text = getField(geoField, esHit['_source'])
     if text == None: return None
     res = callServer('put', ServerEndpoint, '/rmeta', text, {'Accept' : 'application/json', 'Content-Type' : 'application/geotopic'}, False)
     if res[0] != 200:
@@ -104,8 +121,8 @@ def addTikaGeo(tJson, nJson):
         nJson["tika_location"] = tikaGeo
         
             
-def geoIndex(search, index, outDir, esUrl, geoField, match):
-    verboseLog("Connecting to Elasticsearch: ["+esUrl+"]: geoField: ["+geoField+"]: search index: ["+search+"]: match: ["+match+"]")
+def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField):
+    verboseLog("Connecting to Elasticsearch: ["+esUrl+"]: geoField: ["+geoField+"]: search index: ["+search+"]: match: ["+match+"]: idField: ["+idField+"]")
     es = Elasticsearch([esUrl])
     if not os.path.exists(outDir):
         verboseLog("Creating ["+outDir+"] since it doesn't exist.")
@@ -117,9 +134,15 @@ def geoIndex(search, index, outDir, esUrl, geoField, match):
     count = 0
     tikaGeoCount = 0
 
-    for hit in res:
-        tikaJson = tikaGeoExtract(hit, geoField)
+    for hit in res:        
         newDoc = hit['_source']
+        idVal = getField(idField, newDoc)
+        if idVal != None and idVal in ids:
+            verboseLog("Skipping Tika GeoTopic analysis on doc: ["+idVal+"] doc already generated.")
+            count = count + 1
+            continue
+
+        tikaJson = tikaGeoExtract(hit, geoField)
         addTikaGeo(tikaJson, newDoc)
         hasTikaGeo = "no"
         if "tika_location" in newDoc:
@@ -136,6 +159,8 @@ def geoIndex(search, index, outDir, esUrl, geoField, match):
             with open(filePath, "w") as outFile:
                 outFile.write(json.dumps(newDoc))
             print "Writing ["+filePath+"] Tika Geo: ["+hasTikaGeo+"]: Total Docs Written: ["+str(count)+"]"
+
+        ids[idVal] = True
         
     if index != None:
         es.indices.refresh(index=index)
@@ -158,7 +183,7 @@ def main(argv=None):
 
    try:
        try:
-          opts, args = getopt.getopt(argv[1:],'hve:s:i:o:g:m:',['help', 'verbose', 'esUrl=', 'search=', 'index=', 'outdir=', 'geoField=', 'match='])
+          opts, args = getopt.getopt(argv[1:],'hve:s:i:o:g:m:d:',['help', 'verbose', 'esUrl=', 'search=', 'index=', 'outdir=', 'geoField=', 'match=', 'idField='])
        except getopt.error, msg:
          raise _Usage(msg)    
      
@@ -171,6 +196,8 @@ def main(argv=None):
        esUrl=None
        geoField=None
        match=None
+       idField=None
+       ids = None
        
        for option, value in opts:           
           if option in ('-h', '--help'):
@@ -192,9 +219,14 @@ def main(argv=None):
               geoField = value
           elif option in ('-m', '--match'):
               match = value
+          elif option in ('-d', '--idField'):
+              idField = value
 
        if search == None or (index == None and outDir == None) or (index != None and outDir != None):
            raise _Usage(_helpMessage)
+
+       if idField != None:
+           ids = readIds(idField, outDir)
 
        if esUrl == None:
            esUrl = "http://localhost:9200"
@@ -205,7 +237,7 @@ def main(argv=None):
        if match == None:
            match = "{ '_type' : 'article' }"
 
-       geoIndex(search, index, outDir, esUrl, geoField, match)
+       geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField)
 
    except _Usage, err:
        print >>sys.stderr, sys.argv[0].split('/')[-1] + ': ' + str(err.msg)
