@@ -62,6 +62,8 @@ def readIds(identifier, outDir):
                 verboseLog("Adding id: ["+val+"]")
                 ids[val] = True
 
+    verboseLog("Read ["+str(len(ids.keys()))+"] ids.")
+
     return ids
 
 def getField(field, doc):
@@ -124,14 +126,18 @@ def addTikaGeo(tJson, nJson):
 def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField):
     verboseLog("Connecting to Elasticsearch: ["+esUrl+"]: geoField: ["+geoField+"]: search index: ["+search+"]: match: ["+match+"]: idField: ["+idField+"]")
     es = Elasticsearch([esUrl])
+    count = 0
     if not os.path.exists(outDir):
         verboseLog("Creating ["+outDir+"] since it doesn't exist.")
         os.makedirs(outDir)
+    else:
+        count = len([name for name in os.listdir(outDir) if os.path.isfile(os.path.join(outDir, name))])
+        verboseLog(str(count)+" existing files in ["+outDir+"]")
+        count = count + 1
 
     query = {"query": {"match": eval(match)}}
     res = helpers.scan(client= es, query=query, scroll= "120m", index=search, raise_on_error=False, timeout="120m")
     docs = []
-    count = 0
     tikaGeoCount = 0
 
     for hit in res:        
@@ -139,7 +145,6 @@ def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField):
         idVal = getField(idField, newDoc)
         if idVal != None and idVal in ids:
             verboseLog("Skipping Tika GeoTopic analysis on doc: ["+idVal+"] doc already generated.")
-            count = count + 1
             continue
 
         tikaJson = tikaGeoExtract(hit, geoField)
