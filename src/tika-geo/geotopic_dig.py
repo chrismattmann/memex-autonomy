@@ -20,10 +20,12 @@ import os
 import sys
 import getopt
 import glob
+import hashlib
 from tika.tika import callServer
 from tika.tika import ServerEndpoint
 from elasticsearch import Elasticsearch
 from elasticsearch import helpers
+
 
 _verbose = False
 _helpMessage = '''
@@ -50,24 +52,29 @@ Operation:
     Work verbosely.
 '''
 
-def readIds(identifier, outDir):
+def readIdsAndHashes(outDir, identifier=None):
     verboseLog("Reading IDs from ["+outDir+"*.json]")
     ids = {}
+    hashes = {}
     jsonFiles = glob.glob(outDir + "*.json")
     tikaLocations = 0
     for f in jsonFiles:
         with open(f, 'r') as fd:
             doc = json.load(fd)
-            val = getField(identifier, doc)            
+            if identifier != None: 
+                val = getField(identifier, doc)
             if "tika_location" in doc:
                 tikaLocations += 1
             if val != None:
-                verboseLog("Adding id: ["+val+"]")
                 ids[val] = True
 
-    verboseLog("Read ["+str(len(ids.keys()))+"] ids.")
+            hash = hashlib.md5(open(f, 'rb').read()).digest()
+            hashes[hash] = f
 
-    return (ids, tikaLocations)
+    verboseLog("Read ["+str(len(ids.keys()))+"] ids.")
+    verboseLog("Computed ["+str(len(hashes.keys()))+"] unique hashes.")
+
+    return (ids, tikaLocations, hashes)
 
 def getField(field, doc):
     if "." in field:
@@ -126,7 +133,7 @@ def addTikaGeo(tJson, nJson):
         nJson["tika_location"] = tikaGeo
         
             
-def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField, tikaLocations):
+def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField, tikaLocations, hashes):
     verboseLog("Connecting to Elasticsearch: ["+esUrl+"]: geoField: ["+geoField+"]: search index: ["+search+"]: match: ["+match+"]: idField: ["+idField+"]")
     es = Elasticsearch([esUrl])
     count = 0
@@ -145,9 +152,14 @@ def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField, tikaLo
 
     for hit in res:        
         newDoc = hit['_source']
+        newDocHash = hashlib.md5(json.dumps(newDoc)).digest()
+        if newDocHash in hashes:
+            verboseLog("[INFO] [Hash] Skipping Tika GeoTopic analysis on doc: ["+hit['_id']+"] already generated.")
+            continue
+
         idVal = getField(idField, newDoc)
         if idVal != None and idVal in ids:
-            verboseLog("Skipping Tika GeoTopic analysis on doc: ["+idVal+"] doc already generated.")
+            verboseLog("[INFO] [Id-Val] Skipping Tika GeoTopic analysis on doc: ["+idVal+"] doc already generated.")
             continue
 
         tikaJson = tikaGeoExtract(hit, geoField)
@@ -169,6 +181,7 @@ def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField, tikaLo
             print "Writing ["+filePath+"] Tika Geo: ["+hasTikaGeo+"]: Total Docs Written: ["+str(count)+"]"
 
         ids[idVal] = True
+        hashes[newDocHash] = os.path.join(outDir, str(count)+".json")
         
     if index != None:
         es.indices.refresh(index=index)
@@ -206,6 +219,7 @@ def main(argv=None):
        match=None
        idField=None
        ids = None
+       hashes = None
        tikaLocations = 0
        
        for option, value in opts:           
@@ -234,9 +248,6 @@ def main(argv=None):
        if search == None or (index == None and outDir == None) or (index != None and outDir != None):
            raise _Usage(_helpMessage)
 
-       if idField != None:
-           (ids, tikaLocations) = readIds(idField, outDir)
-
        if esUrl == None:
            esUrl = "http://localhost:9200"
        
@@ -246,7 +257,8 @@ def main(argv=None):
        if match == None:
            match = "{ '_type' : 'article' }"
 
-       geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField, tikaLocations)
+       (ids, tikaLocations, hashes) = readIdsAndHashes(outDir, idField)
+       geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField, tikaLocations, hashes)
 
    except _Usage, err:
        print >>sys.stderr, sys.argv[0].split('/')[-1] + ': ' + str(err.msg)
