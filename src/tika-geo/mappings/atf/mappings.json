@@ -1,0 +1,1313 @@
+{
+    "aliases": {
+        "dig-atf-weapons-latest": {}
+    },
+    "mappings": {
+        "weapons": {
+            "_timestamp": {
+                "enabled": true,
+                "store": true
+            },
+            "properties": {
+                "@context": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "a": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "author": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "identifier": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "hasType": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "isAuthorOf": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "location": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "address": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "uri": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "memberOf": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "activityCount": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "aggregateRating": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "ratingValue": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "memberOf": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "uri": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "startDate": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "name": {
+                            "fields": {
+                                "raw": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "string"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "author_name_histogram": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "count": {
+                            "type": "long"
+                        },
+                        "name": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "value": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "availabilityStarts": {
+                    "format": "dateOptionalTime",
+                    "type": "date"
+                },
+                "availableAtOrFrom": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "address": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "buyer": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "description": {
+                            "fields": {
+                                "raw": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "string"
+                        },
+                        "memberOf": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "memberOf": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "uri": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "startDate": {
+                                    "format": "dateOptionalTime",
+                                    "type": "date"
+                                }
+                            },
+                            "type": "nested"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "dateCreated": {
+                    "format": "dateOptionalTime",
+                    "type": "date"
+                },
+                "dateCreated_aggregated": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "name": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "value": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "description": {
+                    "fields": {
+                        "english": {
+                            "analyzer": "english",
+                            "type": "string"
+                        }
+                    },
+                    "type": "string"
+                },
+  "tika_location": {
+                    "include_in_root": true,
+                    "properties": {
+                        "alternate_locations": {
+                            "include_in_root": true,
+                            "properties": {
+                                "alt_geo_lat": {
+                                    "doc_values": true,
+                                    "type": "double"
+                                },
+                                "alt_geo_lng": {
+                                    "doc_values": true,
+                                    "type": "double"
+                                },
+                                "alt_geo_name": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "geo_lat": {
+                            "doc_values": true,
+                            "type": "double"
+                        },
+                        "geo_lng": {
+                            "doc_values": true,
+                            "type": "double"
+                        },
+                        "geo_name": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "geonames_address": {
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "fallsWithinCommunity3rdDiv": {
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "uri": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "fallsWithinCountry": {
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "hasName": {
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "label": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "uri": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "fallsWithinCountyProvince2ndDiv": {
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "uri": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "fallsWithinState1stDiv": {
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "hasName": {
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "label": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "uri": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "geo": {
+                            "lat_lon": true,
+                            "type": "geo_point"
+                        },
+                        "hasIdentifier": {
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "hasType": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "label": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "hasPreferredName": {
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "label": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "score": {
+                            "type": "long"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "hasBodyPart": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "text": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "hasPost": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "author": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "identifier": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "hasType": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "isAuthorOf": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "location": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "address": {
+                                            "include_in_root": true,
+                                            "properties": {
+                                                "a": {
+                                                    "index": "not_analyzed",
+                                                    "type": "string"
+                                                },
+                                                "name": {
+                                                    "fields": {
+                                                        "raw": {
+                                                            "index": "not_analyzed",
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "nested"
+                                        },
+                                        "uri": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "memberOf": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "activityCount": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "aggregateRating": {
+                                            "include_in_root": true,
+                                            "properties": {
+                                                "a": {
+                                                    "index": "not_analyzed",
+                                                    "type": "string"
+                                                },
+                                                "ratingValue": {
+                                                    "index": "not_analyzed",
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "nested"
+                                        },
+                                        "memberOf": {
+                                            "properties": {
+                                                "a": {
+                                                    "index": "not_analyzed",
+                                                    "type": "string"
+                                                },
+                                                "name": {
+                                                    "fields": {
+                                                        "raw": {
+                                                            "index": "not_analyzed",
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "type": "string"
+                                                },
+                                                "uri": {
+                                                    "index": "not_analyzed",
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "nested"
+                                        },
+                                        "startDate": {
+                                            "format": "dateOptionalTime",
+                                            "type": "date"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "name": {
+                                    "fields": {
+                                        "raw": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "string"
+                                },
+                                "uri": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "dateCreated": {
+                            "format": "dateOptionalTime",
+                            "type": "date"
+                        },
+                        "hasBodyPart": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "fields": {
+                                        "english": {
+                                            "analyzer": "english",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "hasSignaturePart": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "fields": {
+                                        "english": {
+                                            "analyzer": "english",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "hasTitlePart": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "fields": {
+                                        "english": {
+                                            "analyzer": "english",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "identifier": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "hasType": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "isPostOf": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "hasSignaturePart": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "text": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "hasTitlePart": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "text": {
+                            "fields": {
+                                "english": {
+                                    "analyzer": "english",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "identifier": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "hasType": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "name": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "inLanguage": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "isAuthorOf": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "author": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "dateCreated": {
+                            "format": "dateOptionalTime",
+                            "type": "date"
+                        },
+                        "hasBodyPart": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "hasSignaturePart": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "hasTitlePart": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "identifier": {
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "hasType": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "isPostOf": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "hasPost": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "hasTitlePart": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "text": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "identifier": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "hasType": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "inLanguage": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "publisher": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "uri": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "uri": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "isPostOf": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "hasPost": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "hasTitlePart": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "text": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "identifier": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "hasType": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "inLanguage": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "publisher": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "uri": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "url": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "itemOffered": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "category": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "image": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "itemCondition": {
+                            "type": "string"
+                        },
+                        "keywords": {
+                            "fields": {
+                                "english": {
+                                    "analyzer": "english",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "string"
+                        },
+                        "manufacturer": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "model": {
+                            "type": "string"
+                        },
+                        "offers": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "serialNumber": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "location": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "address": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "memberOf": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "activityCount": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "aggregateRating": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "ratingValue": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "memberOf": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "uri": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "startDate": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "name": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "price": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "priceCurrency": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "priceSpecification": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "price": {
+                            "type": "long"
+                        },
+                        "priceCurrency": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "provider": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "name": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "publisher": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "name": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "seller": {
+                    "include_in_root": true,
+                    "properties": {
+                        "a": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        },
+                        "contactPoint": {
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "identifier": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "hasType": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "name": {
+                                    "fields": {
+                                        "raw": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "string"
+                                },
+                                "telephone": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                }
+                            }
+                        },
+                        "description": {
+                            "fields": {
+                                "raw": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "string"
+                        },
+                        "memberOf": {
+                            "include_in_root": true,
+                            "properties": {
+                                "a": {
+                                    "index": "not_analyzed",
+                                    "type": "string"
+                                },
+                                "memberOf": {
+                                    "include_in_root": true,
+                                    "properties": {
+                                        "a": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        },
+                                        "uri": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "nested"
+                                },
+                                "name": {
+                                    "fields": {
+                                        "raw": {
+                                            "index": "not_analyzed",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "string"
+                                },
+                                "startDate": {
+                                    "format": "dateOptionalTime",
+                                    "type": "date"
+                                },
+                                "uri": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "nested"
+                        },
+                        "uri": {
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    },
+                    "type": "nested"
+                },
+                "sku": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "title": {
+                    "fields": {
+                        "english": {
+                            "analyzer": "english",
+                            "type": "string"
+                        }
+                    },
+                    "type": "string"
+                },
+                "uri": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                },
+                "url": {
+                    "index": "not_analyzed",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "settings": {
+        "index": {
+            "creation_date": "1438623579752",
+            "number_of_replicas": "1",
+            "number_of_shards": "40",
+            "uuid": "V3JVHLE-SIKYTMTV9fyOOw",
+            "version": {
+                "created": "1060199"
+            }
+        }
+    },
+    "warmers": {}
+}
