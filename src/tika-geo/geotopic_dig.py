@@ -54,17 +54,20 @@ def readIds(identifier, outDir):
     verboseLog("Reading IDs from ["+outDir+"*.json]")
     ids = {}
     jsonFiles = glob.glob(outDir + "*.json")
+    tikaLocations = 0
     for f in jsonFiles:
         with open(f, 'r') as fd:
             doc = json.load(fd)
-            val = getField(identifier, doc)
+            val = getField(identifier, doc)            
+            if "tika_location" in doc:
+                tikaLocations += 1
             if val != None:
                 verboseLog("Adding id: ["+val+"]")
                 ids[val] = True
 
     verboseLog("Read ["+str(len(ids.keys()))+"] ids.")
 
-    return ids
+    return (ids, tikaLocations)
 
 def getField(field, doc):
     if "." in field:
@@ -123,7 +126,7 @@ def addTikaGeo(tJson, nJson):
         nJson["tika_location"] = tikaGeo
         
             
-def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField):
+def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField, tikaLocations):
     verboseLog("Connecting to Elasticsearch: ["+esUrl+"]: geoField: ["+geoField+"]: search index: ["+search+"]: match: ["+match+"]: idField: ["+idField+"]")
     es = Elasticsearch([esUrl])
     count = 0
@@ -138,7 +141,7 @@ def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField):
     query = {"query": {"match": eval(match)}}
     res = helpers.scan(client= es, query=query, scroll= "120m", index=search, raise_on_error=False, timeout="120m")
     docs = []
-    tikaGeoCount = 0
+    tikaGeoCount = 0 + tikaLocations
 
     for hit in res:        
         newDoc = hit['_source']
@@ -157,7 +160,7 @@ def geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField):
         count = count + 1
         if index != None:
             es.index(index=index, doc_type='article', body=newDoc)
-            print "Indexing "+newDoc["uri"]+" Tika Geo: ["+hasTikaGeo+"]: Total Docs Indexed: ["+str(count)+"]"
+            print "Indexing "+newDoc["uri"]+" Tika Geo: ["+hasTikaGeo+"]: Total Docs Indexed: ["+str(count)+"]: Total Tika GeoLocations: ["+str(tikaGeoCount)+"]"
 
         if outDir != None:
             filePath = outDir + str(count)+".json"
@@ -203,6 +206,7 @@ def main(argv=None):
        match=None
        idField=None
        ids = None
+       tikaLocations = 0
        
        for option, value in opts:           
           if option in ('-h', '--help'):
@@ -231,7 +235,7 @@ def main(argv=None):
            raise _Usage(_helpMessage)
 
        if idField != None:
-           ids = readIds(idField, outDir)
+           (ids, tikaLocations) = readIds(idField, outDir)
 
        if esUrl == None:
            esUrl = "http://localhost:9200"
@@ -242,7 +246,7 @@ def main(argv=None):
        if match == None:
            match = "{ '_type' : 'article' }"
 
-       geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField)
+       geoIndex(search, index, outDir, esUrl, geoField, match, ids, idField, tikaLocations)
 
    except _Usage, err:
        print >>sys.stderr, sys.argv[0].split('/')[-1] + ': ' + str(err.msg)
