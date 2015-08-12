@@ -41,6 +41,7 @@ def dedup(dirpath, commit):
     hashes = {}
     numdupes = 0
     numfiles = 0
+    numremoved = 0
     onlyfiles = [ f for f in listdir(dirpath) if isfile(join(dirpath,f)) ]
     for f in onlyfiles:
         filename = os.path.join(dirpath, f)
@@ -50,6 +51,7 @@ def dedup(dirpath, commit):
             if commit:
                 verboseLog("[INFO] Removing: ["+filename+"]")
                 os.remove(filename)
+                numremoved += 1
             numdupes += 1
         else:    
             hashes[hash] = f
@@ -57,6 +59,7 @@ def dedup(dirpath, commit):
 
     print "Discovered "+str(len(hashes.keys()))+" unique hashes."
     print "Discovered "+str(numdupes)+" duplicate files."
+    print "Removed: "+str(numremoved)+" files."
     print "Total "+str(numfiles)+" files."
 
 def verboseLog(message):
