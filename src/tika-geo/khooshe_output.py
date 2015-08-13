@@ -38,7 +38,7 @@ Operation:
 '''
 
 def generateGeoCsv(dirpath, outdirpath):
-    outfile = "sample_pts.csv"
+    outfile = "sample_points.csv"
     onlyfiles = [ f for f in listdir(dirpath) if isfile(join(dirpath,f)) ]
     print "[INFO] Read "+str(len(onlyfiles))+" json files from ["+dirpath+"]"
 
@@ -61,9 +61,9 @@ def generateGeoCsv(dirpath, outdirpath):
                     geoLat = None
                     geoLng = None
                     if "geo_lat" in tikaLoc:
-                        geoLat = tikaLoc["geo_lat"]
+                        geoLng = tikaLoc["geo_lat"] #workaround, flipped
                     if "geo_lng" in tikaLoc:
-                        geoLng = tikaLoc["geo_lng"]
+                        geoLat = tikaLoc["geo_lng"] #workaround, flipped
 
                     if geoLat != None and geoLng != None:
                         verboseLog("Writing pt: ("+geoLng+","+geoLat+") from JSON: ["+filename+"]")
